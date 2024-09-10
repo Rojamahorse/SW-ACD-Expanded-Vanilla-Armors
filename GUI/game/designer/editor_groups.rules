@@ -1,0 +1,14 @@
+	SWExpVArmor
+	{
+		NameKey = "EditorGroups/SWExpVArmor"
+		Icon
+		{
+			Texture 
+			{
+				File = "group_SWExpVArmor.png"
+				MipLevels = 2
+				SampleMode = Linear
+			}
+		}
+		SortOrder = 1300
+	}

@@ -1,0 +1,225 @@
+/**
+ * Defines common part toggles for armor roof types, 
+ * roof normals, shield colors, thruster colors, 	
+ * thruster effects, munition types & exterior looks.
+ *
+ * The toggles allow selecting sprite options for
+ * visual variants.
+ * 
+ * Each toggle has a unique ID, choices with IDs, tooltips,
+ * hotkeys, and sprite texture definitions.
+ *
+ * Can be used by parts to enable changeable visuals.
+ */
+PartToggles
+[
+	// Common Roof Type
+	/**
+	* Defines a common toggle for selecting armor roof sprite types.
+	* 
+	* The toggle has ID "SW.armor_roof_type" and uses a popout style.
+	*
+	* It provides choices for old school, vanilla, blank, and debug roof sprites.
+	* 
+	* Each choice has an ID, tooltip localization key, default hotkey, 
+	* and a texture file path for the button icon sprite.
+	*
+	* Can be used by armor parts to allow changing the roof sprite.
+	*/
+	{
+		ToggleID = "SW.5.armor_roof_type"
+		Style = Popout
+		SortOrder = 51;
+		//ShowInEditor = true
+		Choices
+		[
+			//Vanilla Sprite
+			{
+				ChoiceID = "SW5VanillaArmorRoof"
+				ButtonToolTipKey = "PartToggles/VanillaArmorRoof"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "armor/vanilla_roof.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+			//Old School SW:ACD Sprite
+			{
+				ChoiceID = "SW5OldArmorRoof"
+				ButtonToolTipKey = "PartToggles/OldArmorRoof"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "armor/durasteel_classic_roof.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+			//Blank Sprite
+			{
+				ChoiceID = "SW5BlankSquareArmorRoof"
+				ButtonToolTipKey = "PartToggles/BlankSquareArmorRoof"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "armor/blank_roof.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+			//Boxed Sprite
+			{
+				ChoiceID = "SW5BoxedSquareArmorRoof"
+				ButtonToolTipKey = "PartToggles/BoxedSquareArmorRoof"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "armor/framed_roof.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+			//New Durasteel Sprite
+			{
+				ChoiceID = "SW5DurasteelArmorRoof"
+				ButtonToolTipKey = "PartToggles/DurasteelArmorRoof"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "armor/durasteel_v2_roof.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+			//Debug Toggle
+			{
+				ChoiceID = "SW5Empty"
+				ButtonToolTipKey = "PartToggles/Empty"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "Empty.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+		]
+	}
+
+	// Common Roof Normal Type
+	/**
+	* Defines a common toggle for selecting armor roof normal textures.
+	*
+	* The toggle has ID "SW.armor_roof_normal_type" and popout style.
+	* 
+	* It provides choices for old school, vanilla, blank, and debug roof normal textures.
+	*
+	* Each choice has an ID, tooltip localization key, default hotkey, and texture file path.
+	* 
+	* Can be used by armor parts to allow changing roof normal maps.
+	*/
+	{
+		ToggleID = "SW.5.armor_roof_normal_type"
+		Style = Popout
+		SortOrder = 52;
+		//ShowInEditor = true
+		Choices
+		[
+			//Vanilla Sprite
+			{
+				ChoiceID = "SW5VanillaArmorRoofNormal"
+				ButtonToolTipKey = "PartToggles/VanillaArmorRoofNormal"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "armor/roof_0_normals.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+			//Old School SW:ACD Sprite
+			{
+				ChoiceID = "SW5OldArmorRoofNormal"
+				ButtonToolTipKey = "PartToggles/OldArmorRoofNormal"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "armor/roof_1_normals.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+			//Blank Sprite
+			{
+				ChoiceID = "SW5BlankSquareArmorRoofNormal"
+				ButtonToolTipKey = "PartToggles/BlankSquareArmorRoofNormal"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "armor/roof_2_normals.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+			//Boxed Sprite
+			{
+				ChoiceID = "SW5BoxedSquareArmorRoofNormal"
+				ButtonToolTipKey = "PartToggles/BoxedSquareArmorRoofNormal"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "armor/roof_3_normals.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+			//New Durasteel Sprite
+			{
+				ChoiceID = "SW5DurasteelArmorRoofNormal"
+				ButtonToolTipKey = "PartToggles/DurasteelArmorRoofNormal"
+				DefaultHotkey = []
+				ButtonSprite
+				{
+					Texture
+					{
+						File = "armor/roof_4_normals.png"
+						MipLevels = 2
+						SampleMode = Linear
+					}
+				}
+			}
+		]
+	}
+]
