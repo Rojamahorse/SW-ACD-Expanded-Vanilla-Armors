@@ -2,7 +2,7 @@ Part : &<../base_1x1armor.rules>/Part
 {
 	NameKey = "Parts/Structure_1x1_3QuarterMid"
 	IconNameKey = "Parts/Structure_1x1_3QuarterMid_Icon"
-	ID = Roja.Structure_1x1_3QuarterMid
+	ID = SW.expanded_v_structure_1x1_3QuarterMid
 	//OtherIDs = [Structure_1x1_3QuarterMid]
 	EditorGroup = "Misc"
 	DescriptionKey = "Parts/BasicStructureDesc"

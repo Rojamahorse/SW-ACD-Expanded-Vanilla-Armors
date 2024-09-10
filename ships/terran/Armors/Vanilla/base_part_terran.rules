@@ -1,6 +1,6 @@
 Part : &<../base_part_terran_armor.rules>/Part
 {
-	EditorGroups = ["DefensesArmors"]
+	EditorGroups = ["SWExpandedVanillaArmors"]
 	DescriptionKey = "Parts/ExpVArmorDesc"
 	EditorReplacementPartID = ""//corridor
 	Resources

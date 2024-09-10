@@ -5,7 +5,7 @@ Logo = "GUI/group_SWExpVArmor.png"
 Version = 1.0.270
 CompatibleGameVersions = ["0.27.0"]
 ModifiesMultiplayer = true
-Description = "<color r='150' g='120' b='115'><b>This mod adds new armor and structure parts.</b></color>"
+Description = "<color r='150' g='120' b='115'><b>The developers of Star Wars: A Cosmos Divided, presents: \"Expanded Vanilla Armors\" - A standalone modlet based on Kroom's Normal Armor Expanded. This mod adds new armor shapes and structure parts with toggleable textures.</b></color>"
 
 StringsFolder = "Strings"
 
@@ -23,27 +23,10 @@ Actions
 
 
 	//******************* GUI TABS *******************
-	{
-		Action = Add
-		AddTo = "<gui/game/designer/editor_groups.rules>"
-		Name = "DefensesArmors"
-		ToAdd
-		{
-			NameKey = "EditorGroups/DefensesArmors"
-			Icon
-			{
-				Texture = "GUI/group_SWExpVArmor.png"
-			}
-		}
-	}
-	//*********** TRANSFER VANILLA PARTS TO NEW GUI TABS *********
-	{
+	{	
 		Action = Overrides
-		OverrideIn = "<ships/terran/armor/armor.rules>/Part"
-		Overrides
-		{
-			EditorGroup = "DefensesArmors"
-		}
+		OverrideIn = "<./Data/gui/game/designer/build_gui.rules>/EditorGroups"
+		Overrides = &<gui/game/designer/editor_groups.rules>  // /EditorGroups
 	}
 
 	//*********** ADDING GUI TOGGLES *********

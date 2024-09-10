@@ -1,6 +1,6 @@
-	SWExpVArmor
+	SWExpandedVanillaArmors
 	{
-		NameKey = "EditorGroups/SWExpVArmor"
+		NameKey = "EditorGroups/SWExpandedVanillaArmors"
 		Icon
 		{
 			Texture 

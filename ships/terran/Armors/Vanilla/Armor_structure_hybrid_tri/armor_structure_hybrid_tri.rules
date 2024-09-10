@@ -4,7 +4,7 @@ Part : &<../base_part_terran.rules>/Part
 	IconNameKey = "Parts/ExpVArmorStructureHybridTriIcon"
 	DescriptionKey = "Parts/ExpVArmorStructureHybridTriDesc"
 	ID = SW.expanded_v_armor_structure_hybrid_tri
-	EditorGroups = ["DefensesArmors", "Structure"]
+	EditorGroups = ["SWExpandedVanillaArmors"]
 	MaxHealth = floor((&<../base_part_terran.rules>/MaxHealth) * (&~/Scale))	
 	InitialPenetrationResistance = floor((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale))
 	Density = (&<../base_part_terran.rules>/Density)

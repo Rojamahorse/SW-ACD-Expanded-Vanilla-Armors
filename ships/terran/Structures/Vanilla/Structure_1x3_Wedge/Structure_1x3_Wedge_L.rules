@@ -2,7 +2,7 @@ Part : &<../base_1x1armor.rules>/Part
 {
 	NameKey = "Parts/Structure_1x3_Wedge_L"
 	IconNameKey = "Parts/Structure_1x3_Wedge_L_Icon"
-	ID = Roja.Structure_1x3_Wedge_L
+	ID = SW.expanded_v_structure_1x3_Wedge_L
 	//OtherIDs = [Structure_1x3_Wedge_L]//, SW.structure1x3_wedge_L, structure1x3_wedge_L]
 	EditorGroup = "Misc"
 	DescriptionKey = "Parts/BasicStructureDesc"
