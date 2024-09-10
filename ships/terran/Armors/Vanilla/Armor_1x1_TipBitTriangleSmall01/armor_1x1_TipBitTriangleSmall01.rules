@@ -1,7 +1,7 @@
 Part : &<../base_part_terran.rules>/Part
 {
 	NameKey = "Parts/ExpVArmor_1x1_TipBitTriangleSmall01"
-	IconNameKey = "Parts/ExpVArmor_1x1_TipBit01Icon"
+	IconNameKey = "Parts/ExpVArmor_1x1_TipBitTriangleSmall01Icon"
 	ID = SW.expanded_v_armor_1x1_TipBitTriangleSmall01
 	//OtherIDs = [Armor_1x1_TipBitTriangleSmall01, Kroom.Armor_1x1_TipBitTriangleSmall01]
 	
@@ -18,6 +18,7 @@ Part : &<../base_part_terran.rules>/Part
 	//AIValueFactor = 0
 	Size = [1, 1]
 	AllowedContiguity = [Bottom]
+	UnderlyingPart = cosmoteer.structure_tri
 	//SelectionTypeID = "armor"
 	//MaxHealth = 750 //4000/8*1,5
 	//ExplosiveDamageAbsorption = 100%

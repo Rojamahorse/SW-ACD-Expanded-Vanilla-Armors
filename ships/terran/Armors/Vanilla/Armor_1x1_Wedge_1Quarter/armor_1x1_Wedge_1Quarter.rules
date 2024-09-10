@@ -18,6 +18,7 @@ Part : &<../base_part_terran.rules>/Part
 	//AIValueFactor = 0
 	Size = [1, 1]
 	AllowedContiguity = [Right, Bottom]
+	UnderlyingPart = cosmoteer.structure_tri
 	//SelectionTypeID = "armor"
 	//MaxHealth = 375 //4000/16*1.5
 	//ExplosiveDamageAbsorption = 100%
@@ -68,17 +69,17 @@ Part : &<../base_part_terran.rules>/Part
 			RequiresCommand = false
 		}
 
-		DumyCollider
-		{
-			Type = PolygonCollider
-			Vertices
-			[
-				[0.50-1/64, 0.50-1/64]
-				[0.50-1/64, 0.50+1/64]
-				[0.50+1/64, 0.50+1/64]
-				[0.50+1/64, 0.50-1/64]
-			]
-		}
+//		DumyCollider
+//		{
+//			Type = PolygonCollider
+//			Vertices
+//			[
+//				[0.50-1/64, 0.50-1/64]
+//				[0.50-1/64, 0.50+1/64]
+//				[0.50+1/64, 0.50+1/64]
+//				[0.50+1/64, 0.50-1/64]
+//			]
+//		}
 		
 		Collider
 		{

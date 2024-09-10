@@ -4,7 +4,7 @@ Part : &<../base_part_terran.rules>/Part
 	IconNameKey = "Parts/ExpVArmor_1x2_RoundWedgeInv_LIcon"
 	ID = SW.expanded_v_armor_1x2_RoundWedgeInv_L
 	//OtherIDs = [SW.expanded_v_armor_1x2_RoundWedgeInv_R, Kroom.Armor_1x2_RoundWedgeInv_R, Armor_1x2_RoundWedgeInvR, SW.Armor1x2_RoundWedgeInvR, Armor1x2_RoundWedgeInvR, Kroom.Armor_1x2_RoundWedgeInv_L, Armor_1x2_RoundWedgeInvL, SW.Armor1x2_RoundWedgeInvL, Armor1x2_RoundWedgeInvL]
-	FlipWhenLoadingIDs = [SW.expanded_v_armor_1x2_RoundWedgeInv_R, Kroom.Armor_1x2_RoundWedgeInv_R, Armor_1x2_RoundWedgeInvR, SW.Armor1x2_RoundWedgeInvR, Armor1x2_RoundWedgeInvR]
+	FlipWhenLoadingIDs = [SW.expanded_v_armor_1x2_RoundWedgeInv_R /*, Kroom.Armor_1x2_RoundWedgeInv_R, Armor_1x2_RoundWedgeInvR, SW.Armor1x2_RoundWedgeInvR, Armor1x2_RoundWedgeInvR*/]
 	
 	//DescriptionKey = "Parts/ExpVArmorDesc"
 	//EditorReplacementPartID = ""

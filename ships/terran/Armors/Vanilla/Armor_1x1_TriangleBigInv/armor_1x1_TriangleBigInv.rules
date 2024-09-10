@@ -77,17 +77,17 @@ Part : &<../base_part_terran.rules>/Part
 		}
 
 /* //WIP
-		DumyCollider
-		{
-			Type = PolygonCollider
-			Vertices
-			[
-				[0.50-1/64, 0.50-1/64]
-				[0.50-1/64, 0.50+1/64]
-				[0.50+1/64, 0.50+1/64]
-				[0.50+1/64, 0.50-1/64]
-			]
-		}
+//		DumyCollider
+//		{
+//			Type = PolygonCollider
+//			Vertices
+//			[
+//				[0.50-1/64, 0.50-1/64]
+//				[0.50-1/64, 0.50+1/64]
+//				[0.50+1/64, 0.50+1/64]
+//				[0.50+1/64, 0.50-1/64]
+//			]
+//		}
 		
 		Collider
 		{
