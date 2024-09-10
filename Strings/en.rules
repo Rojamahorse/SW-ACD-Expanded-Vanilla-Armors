@@ -1,0 +1,372 @@
+EditorGroups
+{
+	DefensesArmors = "Armors"
+}
+
+Parts
+{
+	BasicArmorDesc = "Absorbs a great deal of enemy weapons fire, protecting a ship's juicy innards. Also acts as a \"lightning rod\" for E.M.P. effects."
+
+	Armor_1x1_Wedge_1Quarter	= "Armor 1x1 One Quarter Wedge"
+	Armor_1x1_Wedge_1Quarter_Icon	= "Armor 1x1"
+
+	Armor_1x1_Wedge_2Quarter	= "Armor 1x1 Half Wedge"
+	Armor_1x1_Wedge_2Quarter_Icon	= "Armor 1x1"
+
+	Armor_1x1_Wedge_3Quarter	= "Armor 1x1 Three Quarter Wedge"
+	Armor_1x1_Wedge_3Quarter_Icon	= "Armor 1x1"
+
+	Armor_1x1_Wedge_1QuarterInv	= "Armor 1x1 One Quarter Wedge Inv."
+	Armor_1x1_Wedge_1QuarterInv_Icon= "Armor 1x1"
+
+	Armor_1x1_Wedge_2QuarterInv	= "Armor 1x1 Two Quarter Wedge Inv."
+	Armor_1x1_Wedge_2QuarterInv_Icon= "Armor 1x1"
+
+	Armor_1x1_Wedge_3QuarterInv	= "Armor 1x1 Three Quarter Wedge Inv."
+	Armor_1x1_Wedge_3QuarterInv_Icon= "Armor 1x1"
+
+	Armor_1x1_RoundSmall		= "Armor 1x1 Round Small"
+	Armor_1x1_RoundSmall_Icon	= "Armor 1x1"
+
+	Armor_1x1_RoundBig		= "Armor 1x1 Round Big"
+	Armor_1x1_RoundBig_Icon		= "Armor 1x1"
+
+	Armor_1x1_RoundSmallInv		= "Armor 1x1 Round Small Inv."
+	Armor_1x1_RoundSmallInv_Icon	= "Armor 1x1"
+
+	Armor_1x1_RoundBigInv		= "Armor 1x1 Round Big Inv."
+	Armor_1x1_RoundBigInv_Icon	= "Armor 1x1"
+
+	Armor_1x1_TriangleBig		= "Armor 1x1 Triangle Big"
+	Armor_1x1_TriangleBig_Icon	= "Armor 1x1"
+
+	Armor_1x1_TriangleBigInv	= "Armor 1x1 Triangle Big Inv"
+	Armor_1x1_TriangleBigInv_Icon	= "Armor 1x1"
+
+	Armor_1x1_TriangleInv		= "Armor 1x1 Triangle Inv."
+	Armor_1x1_TriangleInv_Icon	= "Armor 1x1"
+
+	Armor_1x1_TipBit01		= "Armor 1x1 Tip"
+	Armor_1x1_TipBit01_Icon		= "Armor 1x1 Tip"
+
+	Armor_1x1_TipBit02		= "Armor 1x1 Tip"
+	Armor_1x1_TipBit02_Icon		= "Armor 1x1 Tip"
+
+	Armor_1x1_TipBitRound01		= "Armor 1x1 Tip Round"
+	Armor_1x1_TipBitRound01_Icon	= "Armor 1x1 Tip"
+
+	Armor_1x1_TipBitRound02		= "Armor 1x1 Tip Round"
+	Armor_1x1_TipBitRound02_Icon	= "Armor 1x1 Tip"
+
+	Armor_1x1_TipBitRoundSmall01	= "Armor 1x1 Tip Round Small"
+	Armor_1x1_TipBitRoundSmall01_Icon= "Armor 1x1 Tip"
+
+	Armor_1x1_TipBitTriangleSmall01		= "Armor 1x1 Tip Triangle Small"
+	Armor_1x1_TipBitTriangleSmall01_Icon	= "Armor 1x1 Tip"
+
+	Armor_1x1_TipBitTriangleSmall02		= "Armor 1x1 Tip Triangle Small"
+	Armor_1x1_TipBitTriangleSmall02_Icon	= "Armor 1x1 Tip"
+
+	Armor_1x1_TriangleTopHalf	= "Armor 1x1 Triangle Top Half"
+	Armor_1x1_TriangleTopHalf_Icon	= "Armor 1x1"
+
+	Armor_1x1_TriangleBottomHalf		= "Armor 1x1 Triangle Bottom Half"
+	Armor_1x1_TriangleBottomHalf_Icon	= "Armor 1x1"
+
+	Armor_1x1_SemiRoundTopHalf	= "Armor 1x1 Semi Round Top Half"
+	Armor_1x1_SemiRoundTopHalf_Icon	= "Armor 1x1"
+
+	Armor_1x1_SemiRoundBottomHalf		= "Armor 1x1 Semi Round Bottom Half"
+	Armor_1x1_SemiRoundBottomHalf_Icon	= "Armor 1x1"
+
+	Armor_1x1_RoundWedge		= "Armor 1x1 Round Wedge"
+	Armor_1x1_RoundWedge_Icon	= "Armor 1x1"
+
+	Armor_1x2_RoundWedge_L		= "Armor 1x2 Round Wedge (L)"
+	Armor_1x2_RoundWedge_L_Icon	= "Armor 1x2 (L)"
+
+	Armor_1x2_RoundWedge_R		= "Armor 1x2 Round Wedge (R)"
+	Armor_1x2_RoundWedge_R_Icon	= "Armor 1x2 (R)"
+
+	Armor_1x1_RoundWedgeInv		= "Armor 1x1 Round Wedge Inv."
+	Armor_1x1_RoundWedgeInv_Icon	= "Armor 1x1"
+
+	Armor_1x2_RoundWedgeInv_L	= "Armor 1x2 Round Wedge Inv. (L)"
+	Armor_1x2_RoundWedgeInv_L_Icon	= "Armor 1x2 (L)"
+
+	Armor_1x2_RoundWedgeInv_R	= "Armor 1x2 Round Wedge Inv. (R)"
+	Armor_1x2_RoundWedgeInv_R_Icon	= "Armor 1x2 (R)"
+
+	Armor_1x2_Round			= "Armor 1x2 Round"
+	Armor_1x2_Round_Icon		= "Armor 1x2"
+
+	Armor_1x3_Wedge_L		= "Armor 1x3 Wedge (L)"
+	Armor_1x3_Wedge_L_Icon		= "Armor 1x3 (L)"
+
+	Armor_1x3_Wedge_R		= "Armor 1x3 Wedge (R)"
+	Armor_1x3_Wedge_R_Icon		= "Armor 1x3 (R)"
+
+	Armor_1x1_1Quarter	= "Armor 1x1 One Quarter"
+	Armor_1x1_1Quarter_Icon	= "Armor 1x1"
+
+	Armor_1x1_2Quarter	= "Armor 1x1 Half"
+	Armor_1x1_2Quarter_Icon	= "Armor 1x1"
+
+	Armor_1x1_3Quarter	= "Armor 1x1 Three Quarter"
+	Armor_1x1_3Quarter_Icon	= "Armor 1x1"
+
+	Armor_1x1_2QuarterMid		= "Armor 1x1 Two Quarter Mid"
+	Armor_1x1_2QuarterMid_Icon	= "Armor 1x1"
+
+	Armor_1x1_3QuarterMid		= "Armor 1x1 Three Quarter Mid"
+	Armor_1x1_3QuarterMid_Icon	= "Armor 1x1"
+
+	Armor_1x1_SquareWedge_1		= "Armor 1x1 Square Wedge"
+	Armor_1x1_SquareWedge_1_Icon	= "Armor 1x1"
+
+	Armor_1x1_SquareWedge_2		= "Armor 1x1 Square Wedge"
+	Armor_1x1_SquareWedge_2_Icon	= "Armor 1x1"
+
+	Armor_1x1_SquareWedge_3		= "Armor 1x1 Square Wedge"
+	Armor_1x1_SquareWedge_3_Icon	= "Armor 1x1"
+
+	Armor_1x1_Wedge_4B_A01_L	= "Armor 1x1 Wedge (L)"
+	Armor_1x1_Wedge_4B_A01_L_Icon	= "Armor 1x1 (L)"
+
+	Armor_1x1_Wedge_4B_A01_R	= "Armor 1x1 Wedge (R)"
+	Armor_1x1_Wedge_4B_A01_R_Icon	= "Armor 1x1 (R)"
+
+	Armor_1x1_Wedge_4B_B01_L	= "Armor 1x1 Wedge (L)"
+	Armor_1x1_Wedge_4B_B01_L_Icon	= "Armor 1x1 (L)"
+
+	Armor_1x1_Wedge_4B_B01_R	= "Armor 1x1 Wedge (R)"
+	Armor_1x1_Wedge_4B_B01_R_Icon	= "Armor 1x1 (R)"
+
+	Armor_1x1_Wedge_4B_B02_L	= "Armor 1x1 Wedge (L)"
+	Armor_1x1_Wedge_4B_B02_L_Icon	= "Armor 1x1 (L)"
+
+	Armor_1x1_Wedge_4B_B02_R	= "Armor 1x1 Wedge (R)"
+	Armor_1x1_Wedge_4B_B02_R_Icon	= "Armor 1x1 (R)"
+
+	Armor_1x1_Wedge_4B_C01_L	= "Armor 1x1 Wedge (L)"
+	Armor_1x1_Wedge_4B_C01_L_Icon	= "Armor 1x1 (L)"
+
+	Armor_1x1_Wedge_4B_C01_R	= "Armor 1x1 Wedge (R)"
+	Armor_1x1_Wedge_4B_C01_R_Icon	= "Armor 1x1 (R)"
+
+	Armor_1x1_Wedge_4B_C02_L	= "Armor 1x1 Wedge (L)"
+	Armor_1x1_Wedge_4B_C02_L_Icon	= "Armor 1x1 (L)"
+
+	Armor_1x1_Wedge_4B_C02_R	= "Armor 1x1 Wedge (R)"
+	Armor_1x1_Wedge_4B_C02_R_Icon	= "Armor 1x1 (R)"
+
+	Armor_1x1_Wedge_4B_C03_L	= "Armor 1x1 Wedge (L)"
+	Armor_1x1_Wedge_4B_C03_L_Icon	= "Armor 1x1 (L)"
+
+	Armor_1x1_Wedge_4B_C03_R	= "Armor 1x1 Wedge (R)"
+	Armor_1x1_Wedge_4B_C03_R_Icon	= "Armor 1x1 (R)"
+
+	Armor_1x1_Wedge_4B_D02_L	= "Armor 1x1 Wedge (L)"
+	Armor_1x1_Wedge_4B_D02_L_Icon	= "Armor 1x1 (L)"
+
+	Armor_1x1_Wedge_4B_D02_R	= "Armor 1x1 Wedge (R)"
+	Armor_1x1_Wedge_4B_D02_R_Icon	= "Armor 1x1 (R)"
+
+	Armor_1x1_Wedge_4B_D03_L	= "Armor 1x1 Wedge (L)"
+	Armor_1x1_Wedge_4B_D03_L_Icon	= "Armor 1x1 (L)"
+
+	Armor_1x1_Wedge_4B_D03_R	= "Armor 1x1 Wedge (R)"
+	Armor_1x1_Wedge_4B_D03_R_Icon	= "Armor 1x1 (R)"
+
+	Armor_1x1_Wedge_4B_D04_L	= "Armor 1x1 Wedge (L)"
+	Armor_1x1_Wedge_4B_D04_L_Icon	= "Armor 1x1 (L)"
+
+	Armor_1x1_Wedge_4B_D04_R	= "Armor 1x1 Wedge (R)"
+	Armor_1x1_Wedge_4B_D04_R_Icon	= "Armor 1x1 (R)"
+
+
+
+	BasicStructureDesc = "The underlying structural frame that holds a ship together. Structure is automatically included with all rooms and corridors."
+
+	Structure_1x1_RoundSmall	= "Structure 1x1 Round Small"
+	Structure_1x1_RoundSmall_Icon	= "Struct. 1x1"
+
+	Structure_1x1_RoundBig		= "Structure 1x1 Round Big"
+	Structure_1x1_RoundBig_Icon	= "Struct. 1x1"
+
+	Structure_1x1_RoundSmallInv	= "Structure 1x1 Round Small Inv."
+	Structure_1x1_RoundSmallInv_Icon= "Struct. 1x1"
+
+	Structure_1x1_RoundBigInv	= "Structure 1x1 Round Big Inv."
+	Structure_1x1_RoundBigInv_Icon	= "Struct. 1x1"
+
+	Structure_1x1_Triangle		= "Structure 1x1 Triangle"
+	Structure_1x1_Triangle_Icon	= "Struct. 1x1"
+
+	Structure_1x1_TriangleBig	= "Structure 1x1 Triangle Big"
+	Structure_1x1_TriangleBig_Icon	= "Struct. 1x1"
+
+	Structure_1x1_TriangleBigInv	= "Structure 1x1 Triangle Big Inv"
+	Structure_1x1_TriangleBigInv_Icon= "Struct. 1x1"
+
+	Structure_1x1_TriangleInv	= "Structure 1x1 Triangle Inv."
+	Structure_1x1_TriangleInv_Icon	= "Struct. 1x1"
+
+	Structure_1x1_TipBit01		= "Structure 1x1 Tip"
+	Structure_1x1_TipBit01_Icon	= "Struct. 1x1"
+
+	Structure_1x1_TipBit02		= "Structure 1x1 Tip"
+	Structure_1x1_TipBit02_Icon	= "Struct. 1x1"
+
+	Structure_1x1_TipBitRound01	= "Structure 1x1 Tip Round"
+	Structure_1x1_TipBitRound01_Icon= "Struct. 1x1"
+
+	Structure_1x1_TipBitRound02	= "Structure 1x1 Tip Round"
+	Structure_1x1_TipBitRound02_Icon= "Struct. 1x1"
+
+	Structure_1x1_TipBitRoundSmall01	= "Structure 1x1 Tip Round Small"
+	Structure_1x1_TipBitRoundSmall01_Icon	= "Struct. 1x1"
+
+	Structure_1x1_TipBitTriangleSmall01	= "Structure 1x1 Tip Triangle Small"
+	Structure_1x1_TipBitTriangleSmall01_Icon= "Struct. 1x1"
+
+	Structure_1x1_TipBitTriangleSmall02	= "Structure 1x1 Tip Triangle Small"
+	Structure_1x1_TipBitTriangleSmall02_Icon= "Struct. 1x1"
+
+	Structure_1x1_TriangleTopHalf		= "Structure 1x1 Triangle Top Half"
+	Structure_1x1_TriangleTopHalf_Icon	= "Struct. 1x1"
+
+	Structure_1x1_TriangleBottomHalf	= "Structure 1x1 Triangle Bottom Half"
+	Structure_1x1_TriangleBottomHalf_Icon	= "Struct. 1x1"
+
+	Structure_1x1_SemiRoundTopHalf		= "Structure 1x1 Semi Round Top Half"
+	Structure_1x1_SemiRoundTopHalf_Icon	= "Struct. 1x1"
+
+	Structure_1x1_SemiRoundBottomHalf	= "Structure 1x1 Semi Round Bottom Half"
+	Structure_1x1_SemiRoundBottomHalf_Icon	= "Struct. 1x1"
+
+	Structure_1x1_RoundWedge	= "Structure 1x1 Round Wedge"
+	Structure_1x1_RoundWedge_Icon	= "Struct. 1x1"
+
+	Structure_1x3_Wedge_L		= "Structure 1x3 Wedge (L)"
+	Structure_1x3_Wedge_L_Icon	= "Struct. 1x3 (L)"
+
+	Structure_1x3_Wedge_R		= "Structure 1x3 Wedge (R)"
+	Structure_1x3_Wedge_R_Icon	= "Struct. 1x3 (R)"
+
+	Structure_1x2_Round		= "Structure 1x2 Round"
+	Structure_1x2_Round_Icon	= "Struct. 1x2"
+
+	Structure_1x2_RoundWedge_L	= "Structure 1x2 Round Wedge (L)"
+	Structure_1x2_RoundWedge_L_Icon	= "Struct. 1x2 (L)"
+
+	Structure_1x2_RoundWedge_R	= "Structure 1x2 Round Wedge (R)"
+	Structure_1x2_RoundWedge_R_Icon	= "Struct. 1x2 (R)"
+	Structure_1x2_RoundWedge_R_Desc	= &BasicStructureDesc
+
+	Structure_1x1_RoundWedgeInv	= "Structure 1x1 Round Wedge Inv."
+	Structure_1x1_RoundWedgeInv_Icon= "Struct. 1x1"
+
+	Structure_1x2_RoundWedgeInv_L	= "Structure 1x2 Round Wedge Inv. (L)"
+	Structure_1x2_RoundWedgeInv_L_Icon = "Struct. 1x2 (L)"
+
+	Structure_1x2_RoundWedgeInv_R	= "Structure 1x2 Round Wedge Inv. (R)"
+	Structure_1x2_RoundWedgeInv_R_Icon = "Struct. 1x2 (R)"
+
+	Structure_1x1_Wedge_1Quarter		= "Structure 1x1 One Quarter Wedge"
+	Structure_1x1_Wedge_1Quarter_Icon	= "Struct. 1x1"
+
+	Structure_1x1_Wedge_2Quarter		= "Structure 1x1 Two Quarter Wedge"
+	Structure_1x1_Wedge_2Quarter_Icon	= "Struct. 1x1"
+
+	Structure_1x1_Wedge_3Quarter		= "Structure 1x1 Three Quarter Wedge"
+	Structure_1x1_Wedge_3Quarter_Icon	= "Struct. 1x1"
+
+	Structure_1x1_Wedge_1QuarterInv		= "Structure 1x1 One Quarter Wedge Inv."
+	Structure_1x1_Wedge_1QuarterInv_Icon	= "Struct. 1x1"
+
+	Structure_1x1_Wedge_2QuarterInv		= "Structure 1x1 Two Quarter Wedge Inv."
+	Structure_1x1_Wedge_2QuarterInv_Icon	= "Struct. 1x1"
+
+	Structure_1x1_Wedge_3QuarterInv		= "Structure 1x1 Three Quarter Wedge Inv."
+	Structure_1x1_Wedge_3QuarterInv_Icon	= "Struct. 1x1"
+
+	Structure_1x1_1Quarter			= "Structure 1x1 One Quarter"
+	Structure_1x1_1Quarter_Icon		= "Struct. 1x1"
+
+	Structure_1x1_2Quarter			= "Structure 1x1 Half"
+	Structure_1x1_2Quarter_Icon		= "Struct. 1x1"
+
+	Structure_1x1_3Quarter			= "Structure 1x1 Three Quarter"
+	Structure_1x1_3Quarter_Icon		= "Struct. 1x1"
+
+	Structure_1x1_2QuarterMid		= "Structure 1x1 Two Quarter Mid"
+	Structure_1x1_2QuarterMid_Icon		= "Struct. 1x1"
+
+	Structure_1x1_3QuarterMid		= "Structure 1x1 Three Quarter Mid"
+	Structure_1x1_3QuarterMid_Icon		= "Struct. 1x1"
+
+	Structure_1x1_SquareWedge_1		= "Structure 1x1 Square Wedge"
+	Structure_1x1_SquareWedge_1_Icon	= "Struct. 1x1"
+
+	Structure_1x1_SquareWedge_2		= "Structure 1x1 Square Wedge"
+	Structure_1x1_SquareWedge_2_Icon	= "Struct. 1x1"
+
+	Structure_1x1_SquareWedge_3		= "Structure 1x1 Square Wedge"
+	Structure_1x1_SquareWedge_3_Icon	= "Struct. 1x1"
+
+	Structure_1x1_Wedge_4B_A01_L		= "Structure 1x1 Wedge (L)"
+	Structure_1x1_Wedge_4B_A01_L_Icon	= "Struct. 1x1 (L)"
+
+	Structure_1x1_Wedge_4B_A01_R		= "Structure 1x1 Wedge (R)"
+	Structure_1x1_Wedge_4B_A01_R_Icon	= "Struct. 1x1 (R)"
+
+	Structure_1x1_Wedge_4B_B01_L		= "Structure 1x1 Wedge (L)"
+	Structure_1x1_Wedge_4B_B01_L_Icon	= "Struct. 1x1 (L)"
+
+	Structure_1x1_Wedge_4B_B01_R		= "Structure 1x1 Wedge (R)"
+	Structure_1x1_Wedge_4B_B01_R_Icon	= "Struct. 1x1 (R)"
+
+	Structure_1x1_Wedge_4B_B02_L		= "Structure 1x1 Wedge (L)"
+	Structure_1x1_Wedge_4B_B02_L_Icon	= "Struct. 1x1 (L)"
+
+	Structure_1x1_Wedge_4B_B02_R		= "Structure 1x1 Wedge (R)"
+	Structure_1x1_Wedge_4B_B02_R_Icon	= "Struct. 1x1 (R)"
+
+	Structure_1x1_Wedge_4B_C01_L		= "Structure 1x1 Wedge (L)"
+	Structure_1x1_Wedge_4B_C01_L_Icon	= "Struct. 1x1 (L)"
+
+	Structure_1x1_Wedge_4B_C01_R		= "Structure 1x1 Wedge (R)"
+	Structure_1x1_Wedge_4B_C01_R_Icon	= "Struct. 1x1 (R)"
+
+	Structure_1x1_Wedge_4B_C02_L		= "Structure 1x1 Wedge (L)"
+	Structure_1x1_Wedge_4B_C02_L_Icon	= "Struct. 1x1 (L)"
+
+	Structure_1x1_Wedge_4B_C02_R		= "Structure 1x1 Wedge (R)"
+	Structure_1x1_Wedge_4B_C02_R_Icon	= "Struct. 1x1 (R)"
+
+	Structure_1x1_Wedge_4B_C03_L		= "Structure 1x2 Wedge (L)"
+	Structure_1x1_Wedge_4B_C03_L_Icon	= "Struct. 1x2 (L)"
+
+	Structure_1x1_Wedge_4B_C03_R		= "Structure 1x2 Wedge (R)"
+	Structure_1x1_Wedge_4B_C03_R_Icon	= "Struct. 1x2 (R)"
+
+	Structure_1x1_Wedge_4B_D02_L		= "Structure 1x1 Wedge (L)"
+	Structure_1x1_Wedge_4B_D02_L_Icon	= "Struct. 1x1 (L)"
+
+	Structure_1x1_Wedge_4B_D02_R		= "Structure 1x1 Wedge (R)"
+	Structure_1x1_Wedge_4B_D02_R_Icon	= "Struct. 1x1 (R)"
+
+	Structure_1x1_Wedge_4B_D03_L		= "Structure 1x1 Wedge (L)"
+	Structure_1x1_Wedge_4B_D03_L_Icon	= "Struct. 1x1 (L)"
+
+	Structure_1x1_Wedge_4B_D03_R		= "Structure 1x1 Wedge (R)"
+	Structure_1x1_Wedge_4B_D03_R_Icon	= "Struct. 1x1 (R)"
+
+	Structure_1x1_Wedge_4B_D04_L		= "Structure 1x1 Wedge (L)"
+	Structure_1x1_Wedge_4B_D04_L_Icon	= "Struct. 1x1 (L)"
+
+	Structure_1x1_Wedge_4B_D04_R		= "Structure 1x2 Wedge (R)"
+	Structure_1x1_Wedge_4B_D04_R_Icon	= "Struct. 1x1 (R)"
+
+}

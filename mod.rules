@@ -1,0 +1,85 @@
+﻿ID = "SW.5.Expanded_Vanilla_Armors"
+Name = "Expanded Vanilla Armors"
+Author = "Rojamahorse, SkipperWraith, (based on Kroom's Normal Armor Expanded)"
+Logo = "GUI/group_SWExpVArmor.png"
+Version = 1.0.270
+CompatibleGameVersions = ["0.27.0"]
+ModifiesMultiplayer = true
+Description = "<color r='150' g='120' b='115'><b>This mod adds new armor and structure parts.</b></color>"
+
+StringsFolder = "Strings"
+
+Actions
+[
+	//******************** PARTS ********************
+	{ 	
+		Action = AddMany
+		AddTo = "<ships/terran/terran.rules>/terran/parts"
+		OnlyIfNotExisting = true;
+		//CreateIfNotExisting = true
+
+		ManyToAdd = &<ships/terran/terran.rules>/Terran/Parts
+	}
+
+
+	//******************* GUI TABS *******************
+	{
+		Action = Add
+		AddTo = "<gui/game/designer/editor_groups.rules>"
+		Name = "DefensesArmors"
+		ToAdd
+		{
+			NameKey = "EditorGroups/DefensesArmors"
+			Icon
+			{
+				Texture = "GUI/group_SWExpVArmor.png"
+			}
+		}
+	}
+	//*********** TRANSFER VANILLA PARTS TO NEW GUI TABS *********
+	{
+		Action = Overrides
+		OverrideIn = "<ships/terran/armor/armor.rules>/Part"
+		Overrides
+		{
+			EditorGroup = "DefensesArmors"
+		}
+	}
+
+	//*********** ADDING GUI TOGGLES *********
+	{	//17
+		Action = AddMany
+		AddTo = "<gui/game/parts/part_toggles.rules>/PartToggles"
+		//IgnoreIfNotExisting = true
+		//OnlyIfNotExisting = true
+		//CreateIfNotExisting = true
+		ManyToAdd = &<gui/game/parts/SW_part_toggles.rules>/PartToggles
+	}
+
+	//*********** ADDING TO THE SMALL ARMOR TRIANGLE A STRUCTURE WHEN DESTROYED *********
+//	{
+//		Action = Overrides
+//		OverrideIn = "<ships/terran/armor_tri/armor_tri.rules>/Part"
+//		Overrides
+//		{
+//			CreatePartWhenDestroyed = Structure_1x1_Triangle			
+//		}
+//	}
+
+	// /* *********** MAGIC ************* */
+	// {	//1
+	// 	Action = Add
+	// 	AddTo = <cosmoteer.rules>
+	// 	Name = ROJA_BASE_PART
+	// 	OnlyIfNotExisting = true
+	// 	ToAdd = &<proxy.rules>
+	// }
+	// 
+	// //Lists
+	// {	//1
+	// 	Action = Overrides
+	// 	OverrideIn = <cosmoteer.rules>&<../base_1x1armor.rules>
+	// 	Overrides = &<Parts/Armor/base_1x1armor.rules>
+	// }
+
+]
