@@ -1,7 +1,7 @@
 Part : &<../base_part_terran.rules>/Part
 {
-	NameKey = "Parts/ExpVArmor2"
-	IconNameKey = "Parts/ExpVArmor2Icon"
+	NameKey = "Parts/EXPVArmor2x1"
+	IconNameKey = "Parts/EXPVArmor2x1Icon"
 	ID = SW.expanded_v_armor_2x1
 	EditorReplacementPartID = SW.expanded_v_armor
 	MaxHealth = floor((&<../base_part_terran.rules>/MaxHealth) * (&~/Scale))	

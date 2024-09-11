@@ -1,7 +1,7 @@
 Part : &<../base_part_terran.rules>/Part
 {
-	NameKey = "Parts/ExpVArmor2WedgeL"
-	IconNameKey = "Parts/ExpVArmor2WedgeLIcon"
+	NameKey = "Parts/EXPVArmor1x2wedgeL"
+	IconNameKey = "Parts/EXPVArmor1x2wedgeLIcon"
 	ID = SW.expanded_v_armor_1x2_wedge_L
 	FlipWhenLoadingIDs = [SW.expanded_v_armor2_wedge_R /*, SW.expanded_v_armor_1x2_wedge_R*/]
 	//EditorGroup = "Defenses"

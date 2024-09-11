@@ -1,7 +1,7 @@
 Part : &<../base_part_terran.rules>/Part
 {
-	NameKey = "Parts/ExpVArmorWedge"
-	IconNameKey = "Parts/ExpVArmorWedgeIcon"
+	NameKey = "Parts/EXPVArmorwedge"
+	IconNameKey = "Parts/EXPVArmorwedgeIcon"
 	ID = SW.expanded_v_armor_wedge
 	//EditorGroup = "Defenses"
 	//DescriptionKey = "Parts/ExpVArmorDesc"

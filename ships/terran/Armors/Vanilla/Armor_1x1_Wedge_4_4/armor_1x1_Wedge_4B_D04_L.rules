@@ -1,7 +1,7 @@
 Part : &<../base_part_terran.rules>/Part
 {
-	NameKey = "Parts/ExpVArmor_1x1_Wedge_4B_D04_L"
-	IconNameKey = "Parts/ExpVArmor_1x1_Wedge_4B_D04_LIcon"
+	NameKey = "Parts/EXPVArmor1x1Wedge4BD04L"
+	IconNameKey = "Parts/EXPVArmor1x1Wedge4BD04LIcon"
 	ID = SW.expanded_v_armor_1x1_Wedge_4B_D04_L
 	//OtherIDs = [SW.expanded_v_armor_1x1_Wedge_4B_D04_R, Kroom.Armor_1x1_Wedge_4B_D04_R, Armor_1x1_Wedge_4B_D04_R, Kroom.Armor_1x1_Wedge_4B_D04_L, Armor_1x1_Wedge_4B_D04_L]
 	FlipWhenLoadingIDs = [SW.expanded_v_armor_1x1_Wedge_4B_D04_R /*, Kroom.Armor_1x1_Wedge_4B_D04_R, Armor_1x1_Wedge_4B_D04_R*/]

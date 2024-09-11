@@ -3,189 +3,259 @@ EditorGroups
 	SWExpandedVanillaArmors = "Expanded Vanilla Armors"
 }
 
+
 Parts
 {
 	ExpVArmorDesc = "Absorbs a great deal of enemy weapons fire, protecting a ship's juicy innards. Also acts as a \"lightning rod\" for E.M.P. effects."
+// SW.expanded_v_armor
+EXPVArmor                       = "Armor 1x1 Square"
+EXPVArmorIcon                   = "Armor 1x1"
 
-	ExpVArmor_1x1					= "Armor 1x1"
-	ExpVArmor_1x1_Icon				= "Armor 1x1"
+// SW.expanded_v_armor_1x1_1Quarter
+EXPVArmor1x11Quarter            = "Armor 1x1 Quarter"
+EXPVArmor1x11QuarterIcon        = "Armor 1x1 1/4"
 
-	ExpVArmor_1x1_Wedge_1Quarter	= "Armor 1x1 One Quarter Wedge"
-	ExpVArmor_1x1_Wedge_1Quarter_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_2Quarter
+EXPVArmor1x12Quarter            = "Armor 1x1 Half"
+EXPVArmor1x12QuarterIcon        = "Armor 1x1 1/2"
 
-	ExpVArmor_1x1_Wedge_2Quarter	= "Armor 1x1 Half Wedge"
-	ExpVArmor_1x1_Wedge_2Quarter_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_2QuarterMid
+EXPVArmor1x12QuarterMid         = "Armor 1x1 Half Mid"
+EXPVArmor1x12QuarterMidIcon     = "Armor 1x1 1/2 Mid"
 
-	ExpVArmor_1x1_Wedge_3Quarter	= "Armor 1x1 Three Quarter Wedge"
-	ExpVArmor_1x1_Wedge_3Quarter_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_3Quarter
+EXPVArmor1x13Quarter            = "Armor 1x1 Three Quarter"
+EXPVArmor1x13QuarterIcon        = "Armor 1x1 3/4"
 
-	ExpVArmor_1x1_Wedge_1QuarterInv	= "Armor 1x1 One Quarter Wedge Inv."
-	ExpVArmor_1x1_Wedge_1QuarterInv_Icon= "Armor 1x1"
+// SW.expanded_v_armor_1x1_3QuarterMid
+EXPVArmor1x13QuarterMid         = "Armor 1x1 Three Quarter Mid"
+EXPVArmor1x13QuarterMidIcon     = "Armor 1x1 3/4 Mid"
 
-	ExpVArmor_1x1_Wedge_2QuarterInv	= "Armor 1x1 Two Quarter Wedge Inv."
-	ExpVArmor_1x1_Wedge_2QuarterInv_Icon= "Armor 1x1"
+// SW.expanded_v_armor_1x1_RoundBig
+EXPVArmor1x1RoundBig            = "Armor 1x1 Round Big"
+EXPVArmor1x1RoundBigIcon        = "Armor 1x1 Big Rnd"
 
-	ExpVArmor_1x1_Wedge_3QuarterInv	= "Armor 1x1 Three Quarter Wedge Inv."
-	ExpVArmor_1x1_Wedge_3QuarterInv_Icon= "Armor 1x1"
+// SW.expanded_v_armor_1x1_RoundBigInv
+EXPVArmor1x1RoundBigInv         = "Armor 1x1 Round Big Inverted"
+EXPVArmor1x1RoundBigInvIcon     = "Armor 1x1 Big Rnd Inv"
 
-	ExpVArmor_1x1_RoundSmall		= "Armor 1x1 Round Small"
-	ExpVArmor_1x1_RoundSmall_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_RoundSmall
+EXPVArmor1x1RoundSmall          = "Armor 1x1 Round Small"
+EXPVArmor1x1RoundSmallIcon      = "Armor 1x1 Sm Rnd"
 
-	ExpVArmor_1x1_RoundBig		= "Armor 1x1 Round Big"
-	ExpVArmor_1x1_RoundBig_Icon		= "Armor 1x1"
+// SW.expanded_v_armor_1x1_RoundSmallInv
+EXPVArmor1x1RoundSmallInv       = "Armor 1x1 Round Small Inverted"
+EXPVArmor1x1RoundSmallInvIcon   = "Armor 1x1 Sm Rnd Inv"
 
-	ExpVArmor_1x1_RoundSmallInv		= "Armor 1x1 Round Small Inv."
-	ExpVArmor_1x1_RoundSmallInv_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_RoundWedge
+EXPVArmor1x1RoundWedge          = "Armor 1x1 Round Wedge"
+EXPVArmor1x1RoundWedgeIcon      = "Armor 1x1 Rnd Wdg"
 
-	ExpVArmor_1x1_RoundBigInv		= "Armor 1x1 Round Big Inv."
-	ExpVArmor_1x1_RoundBigInv_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_RoundWedgeInv
+EXPVArmor1x1RoundWedgeInv       = "Armor 1x1 Round Wedge Inverted"
+EXPVArmor1x1RoundWedgeInvIcon   = "Armor 1x1 Rnd Wdg Inv"
 
-	ExpVArmor_1x1_TriangleBig		= "Armor 1x1 Triangle Big"
-	ExpVArmor_1x1_TriangleBig_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_SemiRoundBottomHalf
+EXPVArmor1x1SemiRoundBottomHalf = "Armor 1x1 Semi-Round Bottom Half"
+EXPVArmor1x1SemiRoundBottomHalfIcon = "Armor 1x1 Semi Bot"
 
-	ExpVArmor_1x1_TriangleBigInv	= "Armor 1x1 Triangle Big Inv"
-	ExpVArmor_1x1_TriangleBigInv_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_SemiRoundTopHalf
+EXPVArmor1x1SemiRoundTopHalf    = "Armor 1x1 Semi-Round Top Half"
+EXPVArmor1x1SemiRoundTopHalfIcon = "Armor 1x1 Semi Top"
 
-	ExpVArmor_1x1_TriangleInv		= "Armor 1x1 Triangle Inv."
-	ExpVArmor_1x1_TriangleInv_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_SquareWedge_1
+EXPVArmor1x1SquareWedge1        = "Armor 1x1 Square Wedge"
+EXPVArmor1x1SquareWedge1Icon    = "Armor 1x1 Sq Wdg"
 
-	ExpVArmor_1x1_TipBit01		= "Armor 1x1 Tip"
-	ExpVArmor_1x1_TipBit01_Icon		= "Armor 1x1 Tip"
+// SW.expanded_v_armor_1x1_SquareWedge_1Inv
+EXPVArmor1x1SquareWedge1Inv     = "Armor 1x1 Square Wedge Inverted"
+EXPVArmor1x1SquareWedge1InvIcon = "Armor 1x1 Sq Wdg Inv"
 
-	ExpVArmor_1x1_TipBit02		= "Armor 1x1 Tip"
-	ExpVArmor_1x1_TipBit02_Icon		= "Armor 1x1 Tip"
+// SW.expanded_v_armor_1x1_SquareWedge_2
+EXPVArmor1x1SquareWedge2        = "Armor 1x1 Square Wedge Two"
+EXPVArmor1x1SquareWedge2Icon    = "Armor 1x1 Sq Wdg 2"
 
-	ExpVArmor_1x1_TipBitRound01		= "Armor 1x1 Tip Round"
-	ExpVArmor_1x1_TipBitRound01_Icon	= "Armor 1x1 Tip"
+// SW.expanded_v_armor_1x1_SquareWedge_2Inv
+EXPVArmor1x1SquareWedge2Inv     = "Armor 1x1 Square Wedge Two Inverted"
+EXPVArmor1x1SquareWedge2InvIcon = "Armor 1x1 Sq Wdg 2 Inv"
 
-	ExpVArmor_1x1_TipBitRound02		= "Armor 1x1 Tip Round"
-	ExpVArmor_1x1_TipBitRound02_Icon	= "Armor 1x1 Tip"
+// SW.expanded_v_armor_1x1_SquareWedge_3
+EXPVArmor1x1SquareWedge3        = "Armor 1x1 Square Wedge Three"
+EXPVArmor1x1SquareWedge3Icon    = "Armor 1x1 Sq Wdg 3"
 
-	ExpVArmor_1x1_TipBitRoundSmall01	= "Armor 1x1 Tip Round Small"
-	ExpVArmor_1x1_TipBitRoundSmall01_Icon= "Armor 1x1 Tip"
+// SW.expanded_v_armor_1x1_SquareWedge_3Inv
+EXPVArmor1x1SquareWedge3Inv     = "Armor 1x1 Square Wedge Three Inverted"
+EXPVArmor1x1SquareWedge3InvIcon = "Armor 1x1 Sq Wdg 3 Inv"
 
-	ExpVArmor_1x1_TipBitTriangleSmall01		= "Armor 1x1 Tip Triangle Small"
-	ExpVArmor_1x1_TipBitTriangleSmall01_Icon	= "Armor 1x1 Tip"
+// SW.expanded_v_armor_1x1_TipBit01
+EXPVArmor1x1TipBit01            = "Armor 1x1 Tip Bit One"
+EXPVArmor1x1TipBit01Icon        = "Armor 1x1 Tip 1"
 
-	ExpVArmor_1x1_TipBitTriangleSmall02		= "Armor 1x1 Tip Triangle Small"
-	ExpVArmor_1x1_TipBitTriangleSmall02_Icon	= "Armor 1x1 Tip"
+// SW.expanded_v_armor_1x1_TipBit02
+EXPVArmor1x1TipBit02            = "Armor 1x1 Tip Bit Two"
+EXPVArmor1x1TipBit02Icon        = "Armor 1x1 Tip 2"
 
-	ExpVArmor_1x1_TriangleTopHalf	= "Armor 1x1 Triangle Top Half"
-	ExpVArmor_1x1_TriangleTopHalf_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_TipBitRound01
+EXPVArmor1x1TipBitRound01       = "Armor 1x1 Tip Round One"
+EXPVArmor1x1TipBitRound01Icon   = "Armor 1x1 Tip Rnd 1"
 
-	ExpVArmor_1x1_TriangleBottomHalf		= "Armor 1x1 Triangle Bottom Half"
-	ExpVArmor_1x1_TriangleBottomHalf_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_TipBitRound02
+EXPVArmor1x1TipBitRound02       = "Armor 1x1 Tip Round Two"
+EXPVArmor1x1TipBitRound02Icon   = "Armor 1x1 Tip Rnd 2"
 
-	ExpVArmor_1x1_SemiRoundTopHalf	= "Armor 1x1 Semi Round Top Half"
-	ExpVArmor_1x1_SemiRoundTopHalf_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_TipBitRoundSmall01
+EXPVArmor1x1TipBitRoundSmall01  = "Armor 1x1 Tip Round Small One"
+EXPVArmor1x1TipBitRoundSmall01Icon = "Armor 1x1 Tip Sm Rnd 1"
 
-	ExpVArmor_1x1_SemiRoundBottomHalf		= "Armor 1x1 Semi Round Bottom Half"
-	ExpVArmor_1x1_SemiRoundBottomHalf_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_TipBitRoundSmall02
+EXPVArmor1x1TipBitRoundSmall02  = "Armor 1x1 Tip Round Small Two"
+EXPVArmor1x1TipBitRoundSmall02Icon = "Armor 1x1 Tip Sm Rnd 2"
 
-	ExpVArmor_1x1_RoundWedge		= "Armor 1x1 Round Wedge"
-	ExpVArmor_1x1_RoundWedge_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_TipBitTriangleSmall01
+EXPVArmor1x1TipBitTriangleSmall01 = "Armor 1x1 Tip Triangle Small One"
+EXPVArmor1x1TipBitTriangleSmall01Icon = "Armor 1x1 Tip Tri Sm 1"
 
-	ExpVArmor_1x2_RoundWedge_L		= "Armor 1x2 Round Wedge"
-	ExpVArmor_1x2_RoundWedge_L_Icon	= "Armor 1x2"
+// SW.expanded_v_armor_1x1_TipBitTriangleSmall02
+EXPVArmor1x1TipBitTriangleSmall02 = "Armor 1x1 Tip Triangle Small Two"
+EXPVArmor1x1TipBitTriangleSmall02Icon = "Armor 1x1 Tip Tri Sm 2"
 
-	ExpVArmor_1x2_RoundWedge_R		= "Armor 1x2 Round Wedge"
-	ExpVArmor_1x2_RoundWedge_R_Icon	= "Armor 1x2"
+// SW.expanded_v_armor_1x1_TriangleBig
+EXPVArmor1x1TriangleBig         = "Armor 1x1 Triangle Big"
+EXPVArmor1x1TriangleBigIcon     = "Armor 1x1 Tri Big"
 
-	ExpVArmor_1x1_RoundWedgeInv		= "Armor 1x1 Round Wedge Inv."
-	ExpVArmor_1x1_RoundWedgeInv_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_TriangleBigInv
+EXPVArmor1x1TriangleBigInv      = "Armor 1x1 Triangle Big Inverted"
+EXPVArmor1x1TriangleBigInvIcon  = "Armor 1x1 Tri Big Inv"
 
-	ExpVArmor_1x2_RoundWedgeInv_L	= "Armor 1x2 Round Wedge Inv."
-	ExpVArmor_1x2_RoundWedgeInv_L_Icon	= "Armor 1x2"
+// SW.expanded_v_armor_1x1_TriangleBottomHalf
+EXPVArmor1x1TriangleBottomHalf  = "Armor 1x1 Triangle Bottom Half"
+EXPVArmor1x1TriangleBottomHalfIcon = "Armor 1x1 Tri Bot"
 
-	ExpVArmor_1x2_RoundWedgeInv_R	= "Armor 1x2 Round Wedge Inv."
-	ExpVArmor_1x2_RoundWedgeInv_R_Icon	= "Armor 1x2"
+// SW.expanded_v_armor_1x1_TriangleInv
+EXPVArmor1x1TriangleInv         = "Armor 1x1 Triangle Inverted"
+EXPVArmor1x1TriangleInvIcon     = "Armor 1x1 Tri Inv"
 
-	ExpVArmor_1x2_Round			= "Armor 1x2 Round"
-	ExpVArmor_1x2_Round_Icon		= "Armor 1x2"
+// SW.expanded_v_armor_1x1_TriangleTopHalf
+EXPVArmor1x1TriangleTopHalf     = "Armor 1x1 Triangle Top Half"
+EXPVArmor1x1TriangleTopHalfIcon = "Armor 1x1 Tri Top"
 
-	ExpVArmor_1x3_Wedge_L		= "Armor 1x3 Wedge"
-	ExpVArmor_1x3_Wedge_L_Icon		= "Armor 1x3"
+// SW.expanded_v_armor_1x1_TriangleTopHalf02
+EXPVArmor1x1TriangleTopHalf02   = "Armor 1x1 Triangle Top Half Two"
+EXPVArmor1x1TriangleTopHalf02Icon = "Armor 1x1 Tri Top 2"
 
-	ExpVArmor_1x3_Wedge_R		= "Armor 1x3 Wedge"
-	ExpVArmor_1x3_Wedge_R_Icon		= "Armor 1x3"
+// SW.expanded_v_armor_1x1_Wedge_4B_A01_L
+EXPVArmor1x1Wedge4BA01L			= "Armor 1x1 Wedge 4B A01"
+EXPVArmor1x1Wedge4BA01LIcon		= "Armor 1x1 Wdg 4B A"
 
-	ExpVArmor_1x1_1Quarter	= "Armor 1x1 One Quarter"
-	ExpVArmor_1x1_1Quarter_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_4B_C01_L
+EXPVArmor1x1Wedge4BC01L         = "Armor 1x1 Wedge 4B C01"
+EXPVArmor1x1Wedge4BC01LIcon     = "Armor 1x1 Wdg 4B C01"
 
-	ExpVArmor_1x1_2Quarter	= "Armor 1x1 Half"
-	ExpVArmor_1x1_2Quarter_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_4B_B01_L
+EXPVArmor1x1Wedge4BB01L			= "Armor 1x1 Wedge 4B B01"
+EXPVArmor1x1Wedge4BB01LIcon		= "Armor 1x1 Wdg 4B B01"
 
-	ExpVArmor_1x1_3Quarter	= "Armor 1x1 Three Quarter"
-	ExpVArmor_1x1_3Quarter_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_4B_B02_L
+EXPVArmor1x1Wedge4BB02L			= "Armor 1x1 Wedge 4B B02"
+EXPVArmor1x1Wedge4BB02LIcon 	= "Armor 1x1 Wdg 4B B02"
 
-	ExpVArmor_1x1_2QuarterMid		= "Armor 1x1 Two Quarter Mid"
-	ExpVArmor_1x1_2QuarterMid_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_4B_C02_L
+EXPVArmor1x1Wedge4BC02L			= "Armor 1x1 Wedge 4B C02"
+EXPVArmor1x1Wedge4BC02LIcon		= "Armor 1x1 Wdg 4B C02"
 
-	ExpVArmor_1x1_3QuarterMid		= "Armor 1x1 Three Quarter Mid"
-	ExpVArmor_1x1_3QuarterMid_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_4B_C03_L
+EXPVArmor1x1Wedge4BC03L			= "Armor 1x1 Wedge 4B C03"
+EXPVArmor1x1Wedge4BC03LIcon 	= "Armor 1x1 Wdg 4B C03"
 
-	ExpVArmor_1x1_SquareWedge_1		= "Armor 1x1 Square Wedge"
-	ExpVArmor_1x1_SquareWedge_1_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_4B_D02_L
+EXPVArmor1x1Wedge4BD02L			= "Armor 1x1 Wedge 4B D02"
+EXPVArmor1x1Wedge4BD02LIcon		= "Armor 1x1 Wdg 4B D02"
 
-	ExpVArmor_1x1_SquareWedge_2		= "Armor 1x1 Square Wedge"
-	ExpVArmor_1x1_SquareWedge_2_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_4B_D03_L
+EXPVArmor1x1Wedge4BD03L			= "Armor 1x1 Wedge 4B D03"
+EXPVArmor1x1Wedge4BD03LIcon		= "Armor 1x1 Wdg 4B D03"
 
-	ExpVArmor_1x1_SquareWedge_3		= "Armor 1x1 Square Wedge"
-	ExpVArmor_1x1_SquareWedge_3_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_4B_D04_L
+EXPVArmor1x1Wedge4BD04L			= "Armor 1x1 Wedge 4B D04"
+EXPVArmor1x1Wedge4BD04LIcon		= "Armor 1x1 Wdg 4B D04"
 
-	ExpVArmor_1x1_Wedge_4B_A01_L	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_A01_L_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_1Quarter
+EXPVArmor1x1Wedge1Quarter       = "Armor 1x1 One Quarter Wedge"
+EXPVArmor1x1Wedge1QuarterIcon   = "Armor 1x1 Wdg 1/4"
 
-	ExpVArmor_1x1_Wedge_4B_A01_R	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_A01_R_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_1QuarterInv
+EXPVArmor1x1Wedge1QuarterInv    = "Armor 1x1 One Quarter Wedge Inverted"
+EXPVArmor1x1Wedge1QuarterInvIcon = "Armor 1x1 Wdg 1/4 Inv"
 
-	ExpVArmor_1x1_Wedge_4B_B01_L	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_B01_L_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_2Quarter
+EXPVArmor1x1Wedge2Quarter		= "Armor 1x1 Two Quarter Wedge"
+EXPVArmor1x1Wedge2QuarterIcon	= "Armor 1x1 Wdg 1/2"
 
-	ExpVArmor_1x1_Wedge_4B_B01_R	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_B01_R_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_2QuarterInv
+EXPVArmor1x1Wedge2QuarterInv 	= "Armor 1x1 Two Quarter Wedge Inverted"
+EXPVArmor1x1Wedge2QuarterInvIcon = "Armor 1x1 Wdg 1/2 Inv"
 
-	ExpVArmor_1x1_Wedge_4B_B02_L	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_B02_L_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_3Quarter
+EXPVArmor1x1Wedge3Quarter		= "Armor 1x1 Three Quarter Wedge"
+EXPVArmor1x1Wedge3QuarterIcon	= "Armor 1x1 Wdg 3/4"
 
-	ExpVArmor_1x1_Wedge_4B_B02_R	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_B02_R_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x1_Wedge_3QuarterInv
+EXPVArmor1x1Wedge3QuarterInv	= "Armor 1x1 Three Quarter Wedge Inverted"
+EXPVArmor1x1Wedge3QuarterInvIcon = "Armor 1x1 Wdg 3/4 Inv"
 
-	ExpVArmor_1x1_Wedge_4B_C01_L	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_C01_L_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x2_Round
+EXPVArmor1x2Round               = "Armor 1x2 Round"
+EXPVArmor1x2RoundIcon           = "Armor 1x2 Rnd"
 
-	ExpVArmor_1x1_Wedge_4B_C01_R	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_C01_R_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x2_RoundWedge_L
+EXPVArmor1x2RoundWedgeL         = "Armor 1x2 Round Wedge"
+EXPVArmor1x2RoundWedgeLIcon     = "Armor 1x2 Rnd Wdg"
 
-	ExpVArmor_1x1_Wedge_4B_C02_L	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_C02_L_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x2_RoundWedgeInv_L
+EXPVArmor1x2RoundWedgeInvL      = "Armor 1x2 Round Wedge Inverted"
+EXPVArmor1x2RoundWedgeInvLIcon  = "Armor 1x2 Rnd Wdg Inv"
 
-	ExpVArmor_1x1_Wedge_4B_C02_R	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_C02_R_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x2_wedge_L
+EXPVArmor1x2wedgeL              = "Armor 1x2 Wedge"
+EXPVArmor1x2wedgeLIcon          = "Armor 1x2 Wdg"
 
-	ExpVArmor_1x1_Wedge_4B_C03_L	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_C03_L_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_1x3_Wedge_L
+EXPVArmor1x3WedgeL              = "Armor 1x3 Wedge"
+EXPVArmor1x3WedgeLIcon          = "Armor 1x3 Wdg"
 
-	ExpVArmor_1x1_Wedge_4B_C03_R	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_C03_R_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_2x1
+EXPVArmor2x1                    = "Armor 2x1"
+EXPVArmor2x1Icon                = "Armor 2x1"
 
-	ExpVArmor_1x1_Wedge_4B_D02_L	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_D02_L_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_2x2
+EXPVArmor2x2                    = "Armor 2x2"
+EXPVArmor2x2Icon                = "Armor 2x2"
 
-	ExpVArmor_1x1_Wedge_4B_D02_R	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_D02_R_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_structure_hybrid_1x1
+EXPVArmorstructurehybrid1x1     = "Armor Hybrid 1x1"
+EXPVArmorstructurehybrid1x1Icon = "Armor H 1x1"
 
-	ExpVArmor_1x1_Wedge_4B_D03_L	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_D03_L_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_structure_hybrid_1x2
+EXPVArmorstructurehybrid1x2     = "Armor Hybrid 1x2"
+EXPVArmorstructurehybrid1x2Icon = "Armor H 1x2"
 
-	ExpVArmor_1x1_Wedge_4B_D03_R	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_D03_R_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_structure_hybrid_1x3
+EXPVArmorstructurehybrid1x3     = "Armor Hybrid 1x3"
+EXPVArmorstructurehybrid1x3Icon = "Armor H 1x3"
 
-	ExpVArmor_1x1_Wedge_4B_D04_L	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_D04_L_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_structure_hybrid_tri
+EXPVArmorstructurehybridtri     = "Armor Hybrid Triangle"
+EXPVArmorstructurehybridtriIcon = "Armor H Tri"
 
-	ExpVArmor_1x1_Wedge_4B_D04_R	= "Armor 1x1 Wedge"
-	ExpVArmor_1x1_Wedge_4B_D04_R_Icon	= "Armor 1x1"
+// SW.expanded_v_armor_tri
+EXPVArmortri                    = "Armor Triangle"
+EXPVArmortriIcon                = "Armor Tri"
+
+// SW.expanded_v_armor_wedge
+EXPVArmorwedge                  = "Armor Wedge"
+EXPVArmorwedgeIcon              = "Armor Wdg"
+
+
 
 
 

@@ -1,7 +1,7 @@
 Part : &<../base_part_terran.rules>/Part
 {
-	NameKey = "Parts/ExpVArmor_1x1_TipBitTriangleSmall02"
-	IconNameKey = "Parts/ExpVArmor_1x1_TipBitTriangleSmall02Icon"
+	NameKey = "Parts/EXPVArmor1x1TipBitTriangleSmall02"
+	IconNameKey = "Parts/EXPVArmor1x1TipBitTriangleSmall02Icon"
 	ID = SW.expanded_v_armor_1x1_TipBitTriangleSmall02
 	//OtherIDs = [Armor_1x1_TipBitTriangleSmall02, Kroom.Armor_1x1_TipBitTriangleSmall02]
 	

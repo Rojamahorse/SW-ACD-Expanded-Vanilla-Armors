@@ -1,7 +1,7 @@
 Part : &<../base_part_terran.rules>/Part
 {
-	NameKey = "Parts/ExpVArmorTri"
-	IconNameKey = "Parts/ExpVArmorTriIcon"
+	NameKey = "Parts/EXPVArmortri"
+	IconNameKey = "Parts/EXPVArmortriIcon"
 	ID = SW.expanded_v_armor_tri
 	//EditorGroup = "Defenses"
 	//DescriptionKey = "Parts/ExpVArmorDesc"

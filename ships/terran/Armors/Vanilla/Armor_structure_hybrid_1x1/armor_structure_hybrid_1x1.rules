@@ -1,7 +1,7 @@
 Part : &<../base_part_terran.rules>/Part
 {
-	NameKey = "Parts/ExpVArmorStructureHybrid1x1"
-	IconNameKey = "Parts/ExpVArmorStructureHybrid1x1Icon"
+	NameKey = "Parts/EXPVArmorstructurehybrid1x1"
+	IconNameKey = "Parts/EXPVArmorstructurehybrid1x1Icon"
 	DescriptionKey = "Parts/ExpVArmorStructureHybrid1x1Desc"
 	ID = SW.expanded_v_armor_structure_hybrid_1x1
 	EditorGroups = ["SWExpandedVanillaArmors"]
