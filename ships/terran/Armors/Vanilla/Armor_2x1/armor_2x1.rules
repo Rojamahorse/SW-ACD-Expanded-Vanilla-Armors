@@ -5,7 +5,7 @@ Part : &<../base_part_terran.rules>/Part
 	ID = SW.expanded_v_armor_2x1
 	EditorReplacementPartID = SW.expanded_v_armor
 	MaxHealth = floor((&<../base_part_terran.rules>/MaxHealth) * (&~/Scale))	
-	InitialPenetrationResistance = floor((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale))
+	InitialPenetrationResistance = floor((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale)) // 7
 	Density = (&<../base_part_terran.rules>/Density)
 
     Resources
@@ -25,7 +25,7 @@ Part : &<../base_part_terran.rules>/Part
 	//UnderlyingPartPerTile = ""
 	//
 	//CreatePartPerTileWhenGrabbed = ""
-	//InitialPenetrationResistance = 32
+	//InitialPenetrationResistance = 7
 	//ContinuingPenetrationResistance = &InitialPenetrationResistance
 	//CrewSpeedFactor = 0
 	//Density = 3
@@ -63,9 +63,16 @@ Part : &<../base_part_terran.rules>/Part
 		{
 			Type = ExplosiveResourceDrainSink
 			ResourceType = battery
-			AbsorbsResourceDrain = ceil((&~/Part/MaxHealth)/4) // 3000
-			RecoveryRate = ceil(&AbsorbsResourceDrain) * 0.1
+			AbsorbsResourceDrain = 2000
+			RecoveryRate = (&AbsorbsResourceDrain) * 0.1
 		}
+//		EmpAbsorber
+//		{
+//			Type = ExplosiveResourceDrainSink
+//			ResourceType = battery
+//			AbsorbsResourceDrain = ceil((&~/Part/MaxHealth)/4) // 3000
+//			RecoveryRate = ceil(&AbsorbsResourceDrain) * 0.1
+//		}
 		
 		Graphics
 		{

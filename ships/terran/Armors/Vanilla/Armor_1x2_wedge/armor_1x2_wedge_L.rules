@@ -3,12 +3,12 @@ Part : &<../base_part_terran.rules>/Part
 	NameKey = "Parts/EXPVArmor1x2wedgeL"
 	IconNameKey = "Parts/EXPVArmor1x2wedgeLIcon"
 	ID = SW.expanded_v_armor_1x2_wedge_L
-	FlipWhenLoadingIDs = [SW.expanded_v_armor2_wedge_R /*, SW.expanded_v_armor_1x2_wedge_R*/]
+	//FlipWhenLoadingIDs = [SW.expanded_v_armor2_wedge_R /*, SW.expanded_v_armor_1x2_wedge_R*/]
 	//EditorGroup = "Defenses"
 	//DescriptionKey = "Parts/ExpVArmorDesc"
 	//EditorReplacementPartID = ""
 	MaxHealth = floor((&<../base_part_terran.rules>/MaxHealth) * (&~/Scale))	
-	InitialPenetrationResistance = floor((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale))
+	InitialPenetrationResistance = floor((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale)) // 5
 	Density = (&<../base_part_terran.rules>/Density)
 
     Resources
@@ -28,7 +28,7 @@ Part : &<../base_part_terran.rules>/Part
 	//UnderlyingPartPerTile = ""
 	UnderlyingPart = cosmoteer.structure_1x2_wedge
 	//CreatePartPerTileWhenGrabbed = ""
-	//InitialPenetrationResistance = 16
+	//InitialPenetrationResistance = 5
 	//ContinuingPenetrationResistance = &InitialPenetrationResistance
 	//CrewSpeedFactor = 0
 	//Density = 4 //v:3?
