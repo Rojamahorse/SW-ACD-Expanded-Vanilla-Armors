@@ -7,14 +7,15 @@ Part : &<../base_part_terran.rules>/Part
 	//DescriptionKey = "Parts/ExpVArmorDesc"
 	//EditorReplacementPartID = ""
 	MaxHealth = floor((&<../base_part_terran.rules>/MaxHealth) * (&~/Scale))	
-	InitialPenetrationResistance = floor((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale))
+	InitialPenetrationResistance = ceil((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale) * 0.9)
+
 	Density = (&<../base_part_terran.rules>/Density)
 
     Resources
     [
      	[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
     ]
-	FractionalCostToRepair = 100%
+	//FractionalCostToRepair = 100%
 	//AIValueFactor = 0
 	Size = [1, 1]
 	AllowedContiguity = [Right, Bottom]
@@ -73,10 +74,12 @@ Part : &<../base_part_terran.rules>/Part
 			Type = PolygonCollider
 			Vertices
 			[
-				[1, 0.75]
+				[1, 0]
 				[1, 1]
-				[0.75, 1]
+				[0, 1]
+				[0, 0.75]
 				[0.75, 0.75]
+				[0.75, 0]
 			]
 		}
 

@@ -9,7 +9,8 @@ Part : &<../base_part_terran.rules>/Part
 	//DescriptionKey = "Parts/ExpVArmorDesc"
 	//EditorReplacementPartID = ""
 	MaxHealth = floor((&<../base_part_terran.rules>/MaxHealth) * (&~/Scale))	
-	InitialPenetrationResistance = floor((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale)) // 3
+	InitialPenetrationResistance = ceil((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale) * 0.9)
+ // 3
 	Density = (&<../base_part_terran.rules>/Density)
 
     Resources

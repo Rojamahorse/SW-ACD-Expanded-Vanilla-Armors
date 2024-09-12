@@ -4,7 +4,8 @@ Part : &<../base_part_terran.rules>/Part
 	IconNameKey = "Parts/EXPVArmor1x1RoundWedgeIcon"
 	ID = SW.expanded_v_armor_1x1_RoundWedge
 	MaxHealth = floor((&<../base_part_terran.rules>/MaxHealth) * (&~/Scale))	
-	InitialPenetrationResistance = floor((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale))
+	InitialPenetrationResistance = ceil((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale) * 0.9)
+
 	Density = (&<../base_part_terran.rules>/Density)
 
     Resources

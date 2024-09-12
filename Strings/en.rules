@@ -1,3 +1,6 @@
+CommonStringModIDSWACD = 	"\n<s16><gray>Mod: Expanded Vanilla Armors</gray></s16>"
+
+
 EditorGroups
 {
 	SWExpandedVanillaArmors = "Expanded Vanilla Armors"
@@ -6,30 +9,31 @@ EditorGroups
 
 Parts
 {
-	ExpVArmorDesc = "Absorbs a great deal of enemy weapons fire, protecting a ship's juicy innards. Also acts as a \"lightning rod\" for E.M.P. effects."
+ExpVArmorDesc = "Absorbs a great deal of enemy weapons fire, protecting a ship's juicy innards. Also acts as a \"lightning rod\" for E.M.P. effects. \n\n<magenta>Customizable exterior</magenta><string id='CommonStringModIDSWACD5'/>"
+
 // SW.expanded_v_armor
 EXPVArmor                       = "Armor 1x1 Square"
 EXPVArmorIcon                   = "Armor 1x1"
 
 // SW.expanded_v_armor_1x1_1Quarter
 EXPVArmor1x11Quarter            = "Armor 1x1 Quarter"
-EXPVArmor1x11QuarterIcon        = "Armor 1x1 1/4"
+EXPVArmor1x11QuarterIcon        = "Armor 1x1 Qtr"
 
 // SW.expanded_v_armor_1x1_2Quarter
 EXPVArmor1x12Quarter            = "Armor 1x1 Half"
-EXPVArmor1x12QuarterIcon        = "Armor 1x1 1/2"
+EXPVArmor1x12QuarterIcon        = "Armor 1x1 Half"
 
 // SW.expanded_v_armor_1x1_2QuarterMid
 EXPVArmor1x12QuarterMid         = "Armor 1x1 Half Mid"
-EXPVArmor1x12QuarterMidIcon     = "Armor 1x1 1/2 Mid"
+EXPVArmor1x12QuarterMidIcon     = "Armor 1x1 Half Mid"
 
 // SW.expanded_v_armor_1x1_3Quarter
 EXPVArmor1x13Quarter            = "Armor 1x1 Three Quarter"
-EXPVArmor1x13QuarterIcon        = "Armor 1x1 3/4"
+EXPVArmor1x13QuarterIcon        = "Armor 1x1 3 Qtr"
 
 // SW.expanded_v_armor_1x1_3QuarterMid
 EXPVArmor1x13QuarterMid         = "Armor 1x1 Three Quarter Mid"
-EXPVArmor1x13QuarterMidIcon     = "Armor 1x1 3/4 Mid"
+EXPVArmor1x13QuarterMidIcon     = "Armor 1x1 3 Qtr Mid"
 
 // SW.expanded_v_armor_1x1_RoundBig
 EXPVArmor1x1RoundBig            = "Armor 1x1 Round Big"
@@ -181,27 +185,27 @@ EXPVArmor1x1Wedge4BD04LIcon		= "Armor 1x1 Wdg 4B D04"
 
 // SW.expanded_v_armor_1x1_Wedge_1Quarter
 EXPVArmor1x1Wedge1Quarter       = "Armor 1x1 One Quarter Wedge"
-EXPVArmor1x1Wedge1QuarterIcon   = "Armor 1x1 Wdg 1/4"
+EXPVArmor1x1Wedge1QuarterIcon   = "Armor 1x1 Wdg Qtr"
 
 // SW.expanded_v_armor_1x1_Wedge_1QuarterInv
 EXPVArmor1x1Wedge1QuarterInv    = "Armor 1x1 One Quarter Wedge Inverted"
-EXPVArmor1x1Wedge1QuarterInvIcon = "Armor 1x1 Wdg 1/4 Inv"
+EXPVArmor1x1Wedge1QuarterInvIcon = "Armor 1x1 Wdg Qtr Inv"
 
 // SW.expanded_v_armor_1x1_Wedge_2Quarter
 EXPVArmor1x1Wedge2Quarter		= "Armor 1x1 Two Quarter Wedge"
-EXPVArmor1x1Wedge2QuarterIcon	= "Armor 1x1 Wdg 1/2"
+EXPVArmor1x1Wedge2QuarterIcon	= "Armor 1x1 Wdg Half"
 
 // SW.expanded_v_armor_1x1_Wedge_2QuarterInv
 EXPVArmor1x1Wedge2QuarterInv 	= "Armor 1x1 Two Quarter Wedge Inverted"
-EXPVArmor1x1Wedge2QuarterInvIcon = "Armor 1x1 Wdg 1/2 Inv"
+EXPVArmor1x1Wedge2QuarterInvIcon = "Armor 1x1 Wdg Half Inv"
 
 // SW.expanded_v_armor_1x1_Wedge_3Quarter
 EXPVArmor1x1Wedge3Quarter		= "Armor 1x1 Three Quarter Wedge"
-EXPVArmor1x1Wedge3QuarterIcon	= "Armor 1x1 Wdg 3/4"
+EXPVArmor1x1Wedge3QuarterIcon	= "Armor 1x1 Wdg 3 Qtr"
 
 // SW.expanded_v_armor_1x1_Wedge_3QuarterInv
 EXPVArmor1x1Wedge3QuarterInv	= "Armor 1x1 Three Quarter Wedge Inverted"
-EXPVArmor1x1Wedge3QuarterInvIcon = "Armor 1x1 Wdg 3/4 Inv"
+EXPVArmor1x1Wedge3QuarterInvIcon = "Armor 1x1 Wdg 3 Qtr Inv"
 
 // SW.expanded_v_armor_1x2_Round
 EXPVArmor1x2Round               = "Armor 1x2 Round"

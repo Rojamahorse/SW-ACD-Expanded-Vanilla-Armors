@@ -30,7 +30,8 @@ Part : &<../base_part_terran.rules>/Part
 	ID = SW.expanded_v_armor_2x2
 	EditorReplacementPartID = SW.expanded_v_armor //""
 	MaxHealth = floor((&<../base_part_terran.rules>/MaxHealth) * (&~/Scale))	
-	InitialPenetrationResistance = floor((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale))
+	InitialPenetrationResistance = ceil((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale) * 0.9)
+
 	Density = (&<../base_part_terran.rules>/Density)
 
     Resources

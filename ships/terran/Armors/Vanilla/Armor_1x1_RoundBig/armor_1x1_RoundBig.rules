@@ -8,7 +8,8 @@ Part : &<../base_part_terran.rules>/Part
 	//DescriptionKey = "Parts/ExpVArmorDesc"
 	//EditorReplacementPartID = ""
 	MaxHealth = floor((&<../base_part_terran.rules>/MaxHealth) * (&~/Scale))	
-	InitialPenetrationResistance = floor((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale))
+	InitialPenetrationResistance = ceil((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale) * 0.9)
+
 	Density = (&<../base_part_terran.rules>/Density)
 
     Resources
@@ -25,7 +26,7 @@ Part : &<../base_part_terran.rules>/Part
 	//ReceivableBuffs : ^/0/ReceivableBuffs []
 	//Flammable = false
 	//UnderlyingPartPerTile = ""
-	CreatePartWhenDestroyed = SW.structure1x1_RoundBig
+	//CreatePartWhenDestroyed = SW.structure1x1_RoundBig
 	//CreatePartPerTileWhenGrabbed = ""
 	//InitialPenetrationResistance = 6
 	//ContinuingPenetrationResistance = &InitialPenetrationResistance

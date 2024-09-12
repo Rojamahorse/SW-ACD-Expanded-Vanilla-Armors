@@ -1,9 +1,9 @@
 ﻿ID = "SW.5.Expanded_Vanilla_Armors"
 Name = "Expanded Vanilla Armors"
 Author = "Rojamahorse, SkipperWraith, (based on Kroom's Normal Armor Expanded)"
-Logo = "GUI/group_SWExpVArmor.png"
-Version = 1.0.270
-CompatibleGameVersions = ["0.27.0"]
+Logo = "ModLogo.png"
+Version = 1.0.271
+CompatibleGameVersions = ["0.27.1"]
 ModifiesMultiplayer = true
 Description = "<color r='150' g='120' b='115'><b>The developers of Star Wars: A Cosmos Divided, presents: \"Expanded Vanilla Armors\" - A standalone modlet based on Kroom's Normal Armor Expanded. This mod adds new armor shapes and structure parts with toggleable textures.</b></color>"
 
