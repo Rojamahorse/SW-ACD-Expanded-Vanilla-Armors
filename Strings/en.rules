@@ -1,4 +1,4 @@
-CommonStringModIDSWACD = 	"\n<s16><gray>Mod: Expanded Vanilla Armors</gray></s16>"
+CommonStringModIDEXPVA = 	"\n<s16><gray>Mod: Expanded Vanilla Armors</gray></s16>"
 
 
 EditorGroups
@@ -9,7 +9,8 @@ EditorGroups
 
 Parts
 {
-ExpVArmorDesc = "Absorbs a great deal of enemy weapons fire, protecting a ship's juicy innards. Also acts as a \"lightning rod\" for E.M.P. effects. \n\n<magenta>Customizable exterior</magenta><string id='CommonStringModIDSWACD5'/>"
+
+ExpVArmorDesc = "Absorbs a great deal of enemy weapons fire, protecting a ship's juicy innards. Also acts as a \"lightning rod\" for E.M.P. effects. \n\n<magenta>Customizable exterior</magenta><string id='CommonStringModIDEXPVA'/>"
 
 // SW.expanded_v_armor
 EXPVArmor                       = "Armor 1x1 Square"
