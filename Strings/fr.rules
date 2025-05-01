@@ -1,0 +1,450 @@
+CommonStringModIDEXPVA = 	"\n<s16><gray>Mod: Expanded Vanilla Armors</gray></s16>"
+
+
+EditorGroups
+{
+	SWExpandedVanillaArmors = "Blindage de base étendu"
+}
+
+
+Parts
+{
+
+ExpVArmorDesc = "Absorbe une grande quantité de tirs ennemis, protégeant les précieuses entrailles du vaisseau. Agit également comme un \"paratonnerre\" pour les effets IEM. \n\n<magenta>Extérieur customisable</magenta><string id='CommonStringModIDEXPVA'/>"
+
+// SW.expanded_v_armor
+EXPVArmor                       = "Blindage carré 1x1"
+EXPVArmorIcon                   = "Blindage 1x1"
+
+// SW.expanded_v_armor_1x1_1Quarter
+EXPVArmor1x11Quarter            = "Blindage quart 1x1"
+EXPVArmor1x11QuarterIcon        = "Blindage qrt. 1x1"
+
+// SW.expanded_v_armor_1x1_2Quarter
+EXPVArmor1x12Quarter            = "Blindage moitié 1x1"
+EXPVArmor1x12QuarterIcon        = "Blindage moitié 1x1"
+
+// SW.expanded_v_armor_1x1_2QuarterMid
+EXPVArmor1x12QuarterMid         = "Blindage moitié central 1x1"
+EXPVArmor1x12QuarterMidIcon     = "Blindage moitié central 1x1"
+
+// SW.expanded_v_armor_1x1_3Quarter
+EXPVArmor1x13Quarter            = "Blindage trois quarts 1x1"
+EXPVArmor1x13QuarterIcon        = "Blindage 3 qrt. 1x1"
+
+// SW.expanded_v_armor_1x1_3QuarterMid
+EXPVArmor1x13QuarterMid         = "Blindage trois quarts central 1x1"
+EXPVArmor1x13QuarterMidIcon     = "Blindage 3 qrt. cent. 1x1"
+
+// SW.expanded_v_armor_1x1_RoundBig
+EXPVArmor1x1RoundBig            = "Blindage circulaire grand 1x1"
+EXPVArmor1x1RoundBigIcon        = "Blindage circ. grd. 1x1"
+
+// SW.expanded_v_armor_1x1_RoundBigInv
+EXPVArmor1x1RoundBigInv         = "Blindage circulaire inversé grand 1x1"
+EXPVArmor1x1RoundBigInvIcon     = "Blindage circ. inv. grd. 1x1"
+
+// SW.expanded_v_armor_1x1_RoundSmall
+EXPVArmor1x1RoundSmall          = "Blindage circulaire petit 1x1"
+EXPVArmor1x1RoundSmallIcon      = "Blindage circ. pet. 1x1"
+
+// SW.expanded_v_armor_1x1_RoundSmallInv
+EXPVArmor1x1RoundSmallInv       = "Blindage circulaire inversé petit 1x1"
+EXPVArmor1x1RoundSmallInvIcon   = "Blindage circ. inv. pet. 1x1"
+
+// SW.expanded_v_armor_1x1_RoundWedge
+EXPVArmor1x1RoundWedge          = "Blindage en coin arrondi 1x1"
+EXPVArmor1x1RoundWedgeIcon      = "Blindage en coin arr. 1x1"
+
+// SW.expanded_v_armor_1x1_RoundWedgeInv
+EXPVArmor1x1RoundWedgeInv       = "Blindage en coin arrondi inversé 1x1"
+EXPVArmor1x1RoundWedgeInvIcon   = "Blindage en coin arr. inv. 1x1"
+
+// SW.expanded_v_armor_1x1_SemiRoundBottomHalf
+EXPVArmor1x1SemiRoundBottomHalf = "Blindage semi-arrondi moitié inférieure 1x1"
+EXPVArmor1x1SemiRoundBottomHalfIcon = "Blindage inf. 1x1 "
+
+// SW.expanded_v_armor_1x1_SemiRoundTopHalf
+EXPVArmor1x1SemiRoundTopHalf    = "Blindage semi-Arrondi moitié supérieure 1x1"
+EXPVArmor1x1SemiRoundTopHalfIcon = "Blindage sup. 1x1"
+
+// SW.expanded_v_armor_1x1_SquareWedge_1
+EXPVArmor1x1SquareWedge1        = "Blindage en coin carré 1x1 1"
+EXPVArmor1x1SquareWedge1Icon    = "Blindage en coin carré 1x1 1"
+
+// SW.expanded_v_armor_1x1_SquareWedge_1Inv
+EXPVArmor1x1SquareWedge1Inv     = "Blindage en coin carré inversé 1x1 1"
+EXPVArmor1x1SquareWedge1InvIcon = "Blindage en coin carré inv. 1x1 1"
+
+// SW.expanded_v_armor_1x1_SquareWedge_2
+EXPVArmor1x1SquareWedge2        = "Blindage en coin carré 1x1 2"
+EXPVArmor1x1SquareWedge2Icon    = "Blindage en coin carré 1x1 2"
+
+// SW.expanded_v_armor_1x1_SquareWedge_2Inv
+EXPVArmor1x1SquareWedge2Inv     = "Blindage en coin carré inversé 1x1 2"
+EXPVArmor1x1SquareWedge2InvIcon = "Blindage en coin carré inv. 1x1 2"
+
+// SW.expanded_v_armor_1x1_SquareWedge_3
+EXPVArmor1x1SquareWedge3        = "Blindage en coin carré 1x1 3"
+EXPVArmor1x1SquareWedge3Icon    = "Blindage en coin carré 1x1 3"
+
+// SW.expanded_v_armor_1x1_SquareWedge_3Inv
+EXPVArmor1x1SquareWedge3Inv     = "Blindage en coin carré inversé 1x1 3"
+EXPVArmor1x1SquareWedge3InvIcon = "Blindage en coin carré inv. 1x1 3"
+
+// SW.expanded_v_armor_1x1_TipBit01
+EXPVArmor1x1TipBit01            = "Blindage en pointe 1x1 1"
+EXPVArmor1x1TipBit01Icon        = "Blindage en pointe 1x1 1"
+
+// SW.expanded_v_armor_1x1_TipBit02
+EXPVArmor1x1TipBit02            = "Blindage en pointe 1x1 2"
+EXPVArmor1x1TipBit02Icon        = "Blindage en pointe 1x1 2"
+
+// SW.expanded_v_armor_1x1_TipBitRound01
+EXPVArmor1x1TipBitRound01       = "Blindage en pointe arrondie 1x1 1"
+EXPVArmor1x1TipBitRound01Icon   = "Blindage en pointe arr. 1x1 1"
+
+// SW.expanded_v_armor_1x1_TipBitRound02
+EXPVArmor1x1TipBitRound02       = "Blindage en pointe arrondie 1x1 2"
+EXPVArmor1x1TipBitRound02Icon   = "Blindage en pointe arr. 1x1 2"
+
+// SW.expanded_v_armor_1x1_TipBitRoundSmall01
+EXPVArmor1x1TipBitRoundSmall01  = "Blindage en pointe arrondie petit 1x1 1"
+EXPVArmor1x1TipBitRoundSmall01Icon = "Blindage en pointe arr. pet. 1x1 1"
+
+// SW.expanded_v_armor_1x1_TipBitRoundSmall02
+EXPVArmor1x1TipBitRoundSmall02  = "Blindage en pointe arrondie petit 1x1 2"
+EXPVArmor1x1TipBitRoundSmall02Icon = "Blindage en pointe arr. pet. 1x1 2"
+
+// SW.expanded_v_armor_1x1_TipBitTriangleSmall01
+EXPVArmor1x1TipBitTriangleSmall01 = "Blindage triangulaire en pointe 1x1 1"
+EXPVArmor1x1TipBitTriangleSmall01Icon = "Blindage tri. en pointe pet. 1x1 1"
+
+// SW.expanded_v_armor_1x1_TipBitTriangleSmall02
+EXPVArmor1x1TipBitTriangleSmall02 = "Blindage triangulaire en pointe petit 1x1 2"
+EXPVArmor1x1TipBitTriangleSmall02Icon = "Blindage tri. en pointe pet. 1x1 2"
+
+// SW.expanded_v_armor_1x1_TriangleBig
+EXPVArmor1x1TriangleBig         = "Blindage triangulaire grand 1x1"
+EXPVArmor1x1TriangleBigIcon     = "Blindage tri. grd. 1x1"
+
+// SW.expanded_v_armor_1x1_TriangleBigInv
+EXPVArmor1x1TriangleBigInv      = "Blindage triangulaire inversé grand 1x1"
+EXPVArmor1x1TriangleBigInvIcon  = "Blindage tri. inv. grd. 1x1"
+
+// SW.expanded_v_armor_1x1_TriangleBottomHalf
+EXPVArmor1x1TriangleBottomHalf  = "Blindage triangulaire moitié inférieure 1x1"
+EXPVArmor1x1TriangleBottomHalfIcon = "Blindage tri. inf. 1x1"
+
+// SW.expanded_v_armor_1x1_TriangleInv
+EXPVArmor1x1TriangleInv         = "Blindage triangulaire inversé 1x1"
+EXPVArmor1x1TriangleInvIcon     = "Blindage tri. inv. 1x1"
+
+// SW.expanded_v_armor_1x1_TriangleTopHalf
+EXPVArmor1x1TriangleTopHalf     = "Blindage triangulaire moitié supérieure 1x1"
+EXPVArmor1x1TriangleTopHalfIcon = "Blindage tri. sup. 1x1"
+
+// SW.expanded_v_armor_1x1_TriangleTopHalf02
+EXPVArmor1x1TriangleTopHalf02   = "Blindage triangulaire moitié supérieure 1x1 2"
+EXPVArmor1x1TriangleTopHalf02Icon = "Blindage tri. sup. 1x1 2"
+
+// SW.expanded_v_armor_1x1_Wedge_4B_A01_L
+EXPVArmor1x1Wedge4BA01L			= "Blindage en coin 1x1 4B A01"
+EXPVArmor1x1Wedge4BA01LIcon		= "Blindage en coin 1x1 4B A"
+
+// SW.expanded_v_armor_1x1_Wedge_4B_C01_L
+EXPVArmor1x1Wedge4BC01L         = "Blindage en coin 1x1 4B C01"
+EXPVArmor1x1Wedge4BC01LIcon     = "Blindage en coin 1x1 4B C01"
+
+// SW.expanded_v_armor_1x1_Wedge_4B_B01_L
+EXPVArmor1x1Wedge4BB01L			= "Blindage en coin 1x1 4B B01"
+EXPVArmor1x1Wedge4BB01LIcon		= "Blindage en coin 1x1 4B B01"
+
+// SW.expanded_v_armor_1x1_Wedge_4B_B02_L
+EXPVArmor1x1Wedge4BB02L			= "Blindage en coin 1x1 4B B02"
+EXPVArmor1x1Wedge4BB02LIcon 	= "Blindage en coin 1x1 4B B02"
+
+// SW.expanded_v_armor_1x1_Wedge_4B_C02_L
+EXPVArmor1x1Wedge4BC02L			= "Blindage en coin 1x1 4B C02"
+EXPVArmor1x1Wedge4BC02LIcon		= "Blindage en coin 1x1 4B C02"
+
+// SW.expanded_v_armor_1x1_Wedge_4B_C03_L
+EXPVArmor1x1Wedge4BC03L			= "Blindage en coin 1x1 4B C03"
+EXPVArmor1x1Wedge4BC03LIcon 	= "Blindage en coin 1x1 4B C03"
+
+// SW.expanded_v_armor_1x1_Wedge_4B_D02_L
+EXPVArmor1x1Wedge4BD02L			= "Blindage en coin 1x1 4B D02"
+EXPVArmor1x1Wedge4BD02LIcon		= "Blindage en coin 1x1 4B D02"
+
+// SW.expanded_v_armor_1x1_Wedge_4B_D03_L
+EXPVArmor1x1Wedge4BD03L			= "Blindage en coin 1x1 4B D03"
+EXPVArmor1x1Wedge4BD03LIcon		= "Blindage en coin 1x1 4B D03"
+
+// SW.expanded_v_armor_1x1_Wedge_4B_D04_L
+EXPVArmor1x1Wedge4BD04L			= "Blindage en coin 1x1 4B D04"
+EXPVArmor1x1Wedge4BD04LIcon		= "Blindage en coin 1x1 4B D04"
+
+// SW.expanded_v_armor_1x1_Wedge_1Quarter
+EXPVArmor1x1Wedge1Quarter       = "Blindage en coin un quart 1x1"
+EXPVArmor1x1Wedge1QuarterIcon   = "Blindage en coin 1 qrt. 1x1"
+
+// SW.expanded_v_armor_1x1_Wedge_1QuarterInv
+EXPVArmor1x1Wedge1QuarterInv    = "Blindage en coin un quart inversé 1x1"
+EXPVArmor1x1Wedge1QuarterInvIcon = "Blindage en coin 1 qrt. inv. 1x1"
+
+// SW.expanded_v_armor_1x1_Wedge_2Quarter
+EXPVArmor1x1Wedge2Quarter		= "Blindage en coin deux quarts 1x1"
+EXPVArmor1x1Wedge2QuarterIcon	= "Blindage en coin 2 qrt. 1x1"
+
+// SW.expanded_v_armor_1x1_Wedge_2QuarterInv
+EXPVArmor1x1Wedge2QuarterInv 	= "Blindage en coin deux quarts inversé 1x1"
+EXPVArmor1x1Wedge2QuarterInvIcon = "Blindage en coin 2 qrt. inv. 1x1"
+
+// SW.expanded_v_armor_1x1_Wedge_3Quarter
+EXPVArmor1x1Wedge3Quarter		= "Blindage en coin trois quarts 1x1"
+EXPVArmor1x1Wedge3QuarterIcon	= "Blindage en coin 3 qrt. 1x1"
+
+// SW.expanded_v_armor_1x1_Wedge_3QuarterInv
+EXPVArmor1x1Wedge3QuarterInv	= "Blindage en coin trois quarts inversé 1x1"
+EXPVArmor1x1Wedge3QuarterInvIcon = "Blindage en coin 3 qrt. inv. 1x1"
+
+// SW.expanded_v_armor_1x2_Round
+EXPVArmor1x2Round               = "Blindage circulaire 1x2"
+EXPVArmor1x2RoundIcon           = "Blindage circ. 1x2"
+
+// SW.expanded_v_armor_1x2_RoundWedge_L
+EXPVArmor1x2RoundWedgeL         = "Blindage en coin circulaire 1x2"
+EXPVArmor1x2RoundWedgeLIcon     = "Blindage en coin circ. 1x2"
+
+// SW.expanded_v_armor_1x2_RoundWedgeInv_L
+EXPVArmor1x2RoundWedgeInvL      = "Blindage en coin circulaire inversé 1x2"
+EXPVArmor1x2RoundWedgeInvLIcon  = "Blindage en coin circ. inv. 1x2"
+
+// SW.expanded_v_armor_1x2_wedge_L
+EXPVArmor1x2wedgeL              = "Blindage en coin 1x2"
+EXPVArmor1x2wedgeLIcon          = "Blindage en coin 1x2"
+
+// SW.expanded_v_armor_1x3_Wedge_L
+EXPVArmor1x3WedgeL              = "Blindage en coin 1x3"
+EXPVArmor1x3WedgeLIcon          = "Blindage en coin 1x3"
+
+// SW.expanded_v_armor_2x1
+EXPVArmor2x1                    = "Blindage 2x1"
+EXPVArmor2x1Icon                = "Blindage 2x1"
+
+// SW.expanded_v_armor_2x2
+EXPVArmor2x2                    = "Blindage 2x2"
+EXPVArmor2x2Icon                = "Blindage 2x2"
+
+// SW.expanded_v_armor_structure_hybrid_1x1
+EXPVArmorstructurehybrid1x1     = "Blindage hybride 1x1"
+EXPVArmorstructurehybrid1x1Icon = "Blindage hyb. 1x1"
+
+// SW.expanded_v_armor_structure_hybrid_1x2
+EXPVArmorstructurehybrid1x2     = "Blindage hybride 1x2"
+EXPVArmorstructurehybrid1x2Icon = "Blindage hyb. 1x2"
+
+// SW.expanded_v_armor_structure_hybrid_1x3
+EXPVArmorstructurehybrid1x3     = "Blindage hybride 1x3"
+EXPVArmorstructurehybrid1x3Icon = "Blindage hyb. 1x3"
+
+// SW.expanded_v_armor_structure_hybrid_tri
+EXPVArmorstructurehybridtri     = "Blindage triangulaire hybride"
+EXPVArmorstructurehybridtriIcon = "Blindage tri. hyb."
+
+// SW.expanded_v_armor_tri
+EXPVArmortri                    = "Blindage triangulaire"
+EXPVArmortriIcon                = "Blindage tri."
+
+// SW.expanded_v_armor_wedge
+EXPVArmorwedge                  = "Blindage en coin"
+EXPVArmorwedgeIcon              = "Blindage en coin"
+
+
+
+
+
+	ExpVStructureDesc = "L'ossature structurelle, véritable charpente du vaisseau. La structure est automatiquement incluse dans toutes les salles et couloirs."
+
+	Structure_1x1_RoundSmall	= "Structure circulaire petite 1x1"
+	Structure_1x1_RoundSmall_Icon	= "Structure 1x1"
+
+	Structure_1x1_RoundBig		= "Structure circulaire grande 1x1"
+	Structure_1x1_RoundBig_Icon	= "Structure 1x1"
+
+	Structure_1x1_RoundSmallInv	= "Structure circulaire inversée petite 1x1"
+	Structure_1x1_RoundSmallInv_Icon= "Structure 1x1"
+
+	Structure_1x1_RoundBigInv	= "Structure circulaire inversée grande 1x1"
+	Structure_1x1_RoundBigInv_Icon	= "Structure 1x1"
+
+	Structure_1x1_Triangle		= "Structure triangulaire 1x1"
+	Structure_1x1_Triangle_Icon	= "Structure 1x1"
+
+	Structure_1x1_TriangleBig	= "Structure triangulaire grande 1x1"
+	Structure_1x1_TriangleBig_Icon	= "Structure 1x1"
+
+	Structure_1x1_TriangleBigInv	= "Structure triangulaire inversée grande 1x1"
+	Structure_1x1_TriangleBigInv_Icon= "Structure 1x1"
+
+	Structure_1x1_TriangleInv	= "Structure triangulaire inversée 1x1"
+	Structure_1x1_TriangleInv_Icon	= "Structure 1x1"
+
+	Structure_1x1_TipBit01		= "Structure en pointe 1x1"
+	Structure_1x1_TipBit01_Icon	= "Structure 1x1"
+
+	Structure_1x1_TipBit02		= "Structure en pointe 1x1"
+	Structure_1x1_TipBit02_Icon	= "Structure 1x1"
+
+	Structure_1x1_TipBitRound01	= "Structure en pointe arrondie 1x1"
+	Structure_1x1_TipBitRound01_Icon= "Structure 1x1"
+
+	Structure_1x1_TipBitRound02	= "Structure en pointe arrondie 1x1"
+	Structure_1x1_TipBitRound02_Icon= "Structure 1x1"
+
+	Structure_1x1_TipBitRoundSmall01	= "Structure en pointe arrondie petite 1x1"
+	Structure_1x1_TipBitRoundSmall01_Icon	= "Structure 1x1"
+
+	Structure_1x1_TipBitTriangleSmall01	= "Structure en pointe triangulaire petite 1x1"
+	Structure_1x1_TipBitTriangleSmall01_Icon= "Structure 1x1"
+
+	Structure_1x1_TipBitTriangleSmall02	= "Structure en pointe triangulaire petite 1x1"
+	Structure_1x1_TipBitTriangleSmall02_Icon= "Structure 1x1"
+
+	Structure_1x1_TriangleTopHalf		= "Structure triangulaire moitié supérieure 1x1"
+	Structure_1x1_TriangleTopHalf_Icon	= "Structure 1x1"
+
+	Structure_1x1_TriangleBottomHalf	= "Structure triangulaire moitié inférieure 1x1"
+	Structure_1x1_TriangleBottomHalf_Icon	= "Structure 1x1"
+
+	Structure_1x1_SemiRoundTopHalf		= "Structure demi-circulaire moitié supérieure 1x1"
+	Structure_1x1_SemiRoundTopHalf_Icon	= "Structure 1x1"
+
+	Structure_1x1_SemiRoundBottomHalf	= "Structure 1demi-circulaire moitié inférieure 1x1"
+	Structure_1x1_SemiRoundBottomHalf_Icon	= "Structure 1x1"
+
+	Structure_1x1_RoundWedge	= "Structure en coin circulaire 1x1"
+	Structure_1x1_RoundWedge_Icon	= "Structure 1x1"
+
+	Structure_1x3_Wedge_L		= "Structure en coin 1x3"
+	Structure_1x3_Wedge_L_Icon	= "Structure 1x3"
+
+	Structure_1x3_Wedge_R		= "Structure en coin 1x3"
+	Structure_1x3_Wedge_R_Icon	= "Structure 1x3"
+
+	Structure_1x2_Round		= "Structure circulaire 1x2"
+	Structure_1x2_Round_Icon	= "Structure 1x2"
+
+	Structure_1x2_RoundWedge_L	= "Structure en coin circulaire 1x2"
+	Structure_1x2_RoundWedge_L_Icon	= "Structure 1x2"
+
+	Structure_1x2_RoundWedge_R	= "Structure en coin circulaire 1x2"
+	Structure_1x2_RoundWedge_R_Icon	= "Structure 1x2"
+	Structure_1x2_RoundWedge_R_Desc	= "Absorbe une grande quantité de tirs ennemis, protégeant les précieuses entrailles du vaisseau. Agit également comme un \"paratonnerre\" pour les effets IEM."
+
+	Structure_1x1_RoundWedgeInv	= "Structure en coin circulaire inversée 1x1"
+	Structure_1x1_RoundWedgeInv_Icon= "Structure 1x1"
+
+	Structure_1x2_RoundWedgeInv_L	= "Structure en coin circulaire inversée 1x2"
+	Structure_1x2_RoundWedgeInv_L_Icon = "Structure 1x2"
+
+	Structure_1x2_RoundWedgeInv_R	= "Structure en coin circulaire inversée 1x2"
+	Structure_1x2_RoundWedgeInv_R_Icon = "Structure 1x2"
+
+	Structure_1x1_Wedge_1Quarter		= "Structure en coin un quart 1x1"
+	Structure_1x1_Wedge_1Quarter_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_2Quarter		= "Structure en coin deux quarts 1x1"
+	Structure_1x1_Wedge_2Quarter_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_3Quarter		= "Structure en coin trois quarts 1x1"
+	Structure_1x1_Wedge_3Quarter_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_1QuarterInv		= "Structure en coin un quart inversée 1x1"
+	Structure_1x1_Wedge_1QuarterInv_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_2QuarterInv		= "Structure en coin deux quarts inversée 1x1"
+	Structure_1x1_Wedge_2QuarterInv_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_3QuarterInv		= "Structure en coin trois quarts inversée 1x1"
+	Structure_1x1_Wedge_3QuarterInv_Icon	= "Structure 1x1"
+
+	Structure_1x1_1Quarter			= "Structure un quart 1x1"
+	Structure_1x1_1Quarter_Icon		= "Structure 1x1"
+
+	Structure_1x1_2Quarter			= "Structure moitié 1x1"
+	Structure_1x1_2Quarter_Icon		= "Structure 1x1"
+
+	Structure_1x1_3Quarter			= "Structure trois quarts 1x1"
+	Structure_1x1_3Quarter_Icon		= "Structure 1x1"
+
+	Structure_1x1_2QuarterMid		= "Structure deux quarts centrale 1x1"
+	Structure_1x1_2QuarterMid_Icon		= "Structure 1x1"
+
+	Structure_1x1_3QuarterMid		= "Structure trois quarts centrale 1x1"
+	Structure_1x1_3QuarterMid_Icon		= "Structure 1x1"
+
+	Structure_1x1_SquareWedge_1		= "Structure en coin carré 1x1 1"
+	Structure_1x1_SquareWedge_1_Icon	= "Structure 1x1 1"
+
+	Structure_1x1_SquareWedge_2		= "Structure en coin carré 1x1 2"
+	Structure_1x1_SquareWedge_2_Icon	= "Structure 1x1 2"
+
+	Structure_1x1_SquareWedge_3		= "Structure en coin carré 1x1 3"
+	Structure_1x1_SquareWedge_3_Icon	= "Structure 1x1 3"
+
+	Structure_1x1_Wedge_4B_A01_L		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_A01_L_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_A01_R		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_A01_R_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_B01_L		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_B01_L_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_B01_R		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_B01_R_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_B02_L		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_B02_L_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_B02_R		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_B02_R_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_C01_L		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_C01_L_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_C01_R		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_C01_R_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_C02_L		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_C02_L_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_C02_R		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_C02_R_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_C03_L		= "Structure en coin 1x2"
+	Structure_1x1_Wedge_4B_C03_L_Icon	= "Structure 1x2"
+
+	Structure_1x1_Wedge_4B_C03_R		= "Structure en coin 1x2"
+	Structure_1x1_Wedge_4B_C03_R_Icon	= "Structure 1x2"
+
+	Structure_1x1_Wedge_4B_D02_L		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_D02_L_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_D02_R		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_D02_R_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_D03_L		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_D03_L_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_D03_R		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_D03_R_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_D04_L		= "Structure en coin 1x1"
+	Structure_1x1_Wedge_4B_D04_L_Icon	= "Structure 1x1"
+
+	Structure_1x1_Wedge_4B_D04_R		= "Structure en coin 1x2"
+	Structure_1x1_Wedge_4B_D04_R_Icon	= "Structure 1x1"
+
+}
