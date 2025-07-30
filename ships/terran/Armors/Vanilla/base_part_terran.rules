@@ -3,6 +3,8 @@ Part : &<../base_part_terran_armor.rules>/Part
 	EditorGroups = ["SWExpandedVanillaArmors"]
 	DescriptionKey = "Parts/ExpVArmorDesc"
 	EditorReplacementPartID = ""//corridor
+	EditorParentParts = [ "cosmoteer.armor" ]
+	DontStackInEditorGroups = ["SWExpandedVanillaArmors"]
 	Resources
 	[
 		[steel, ceil(8*(&~/Scale))]
@@ -15,7 +17,11 @@ Part : &<../base_part_terran_armor.rules>/Part
 	MaxHealth = 4000 //v:4000
 	//HealthType = Operational
 	ExplosiveDamageAbsorption = 100%
-	DamageResistances = {explosive = 50%} //1.5HP x 0.5TONS
+	DamageResistances
+	{
+		explosive = 50%	//1.5HP x 0.5TONS
+		thermal = -25%
+	} 
 	Flammable = false
 	//UnderlyingPartPerTile = SW.structure_durasteel
 	//UnderlyingPart = "" //SW.structure_durasteel
