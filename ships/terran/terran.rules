@@ -150,8 +150,13 @@ Terran
 		&<Structures/Vanilla/Structure_1x1_3QuarterMid/Structure_1x1_3QuarterMid.rules>/Part
 
 		&<Structures/Vanilla/Structure_1x1_SquareWedge_1Quarter/Structure_1x1_SquareWedge_1.rules>/Part
+		&<Structures/Vanilla/Structure_1x1_SquareWedge_1QuarterInv/Structure_1x1_SquareWedgeInv_1.rules>/Part
+
 		&<Structures/Vanilla/Structure_1x1_SquareWedge_2Half/Structure_1x1_SquareWedge_2.rules>/Part
+		&<Structures/Vanilla/Structure_1x1_SquareWedge_2HalfInv/Structure_1x1_SquareWedgeInv_2.rules>/Part
+		
 		&<Structures/Vanilla/Structure_1x1_SquareWedge_3Quarter/Structure_1x1_SquareWedge_3.rules>/Part
+		&<Structures/Vanilla/Structure_1x1_SquareWedge_3QuarterInv/Structure_1x1_SquareWedgeInv_3.rules>/Part
 
 		&<Structures/Vanilla/Structure_1x1_Wedge_2_1/Structure_1x1_Wedge_4B_B01_L.rules>/Part
 		&<Structures/Vanilla/Structure_1x1_Wedge_2_2/Structure_1x1_Wedge_4B_D03_L.rules>/Part

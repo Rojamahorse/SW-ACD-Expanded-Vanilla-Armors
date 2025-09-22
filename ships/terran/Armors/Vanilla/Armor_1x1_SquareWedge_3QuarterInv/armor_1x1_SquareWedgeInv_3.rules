@@ -13,10 +13,11 @@ Part : &<../base_part_terran.rules>/Part
 
     Resources
     [
-     	[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
+		[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
     ]
 	//AIValueFactor = 0
 	Size = [1, 1]
+	UnderlyingPart = SW.expanded_v_structure_1x1_SquareWedge_3Inv
 	//AllowedContiguity = [Right, Bottom]
 	//SelectionTypeID = "armor"
 	//MaxHealth = 3400 //4000*9/16*1,5
@@ -66,7 +67,7 @@ Part : &<../base_part_terran.rules>/Part
 			AlwaysAllowInBuildMode = true
 			RequiresCommand = false
 		}
-
+/*
 		ColliderLeft
 		{
 			Type = PolygonCollider
@@ -89,7 +90,21 @@ Part : &<../base_part_terran.rules>/Part
 				[16/64, 16/64]
 			]
 		}
-		
+*/
+		Collider
+		{
+			Type = PolygonCollider
+			Vertices
+			[
+				[1, 0]
+				[1, 1]
+				[0, 1]
+				[0, 0.75]
+				[0.75, 0.75]
+				[0.75, 0]
+			]
+		}
+
 		EmpAbsorber
 		{
 			Type = ExplosiveResourceDrainSink
@@ -149,31 +164,11 @@ Part : &<../base_part_terran.rules>/Part
 					}
 				]
 			}
-//			Roof
-//			{
-//				Layer = "roofs"
-//				DamageLevels
-//				[
-//					{
-//						File = "roof_4.png"
-//						NormalsFile = "roof_4_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_33.png"
-//						NormalsFile = "roof_4_33_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_66.png"
-//						NormalsFile = "roof_4_66_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//				]
-//			}
+		}
+
+		ConstructionStructureSprite : ^/0/ConstructionStructureSprite
+		{
+			AtlasSprite = &<../../../Structures/Vanilla/Structure_1x1_SquareWedge_3QuarterInv\Structure_1x1_SquareWedgeInv_3.rules>/Part/Components/Graphics/Floor/DamageLevels/0
 		}
 
 		DestroyedEffects
@@ -197,4 +192,4 @@ Part : &<../base_part_terran.rules>/Part
 		AOEResist = (&~/Part/DamageResistances/explosive) * 100
 	}
 }
-Scale = (1*7/8)
+Scale = (0.25)
