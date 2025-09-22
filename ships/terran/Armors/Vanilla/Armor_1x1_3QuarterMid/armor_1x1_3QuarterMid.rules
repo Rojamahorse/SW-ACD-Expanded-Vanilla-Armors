@@ -20,6 +20,7 @@ Part : &<../base_part_terran.rules>/Part
 	//AIValueFactor = 0
 	Size = [1, 1]
 	AllowedContiguity = [Top, Bottom]
+	UnderlyingPart = SW.expanded_v_structure_1x1_3Quarter
 	//SelectionTypeID = "armor"
 	//MaxHealth = 4500 //4000*3/4*1,5
 	//ExplosiveDamageAbsorption = 100%
@@ -46,8 +47,7 @@ Part : &<../base_part_terran.rules>/Part
 		Texture
 		{
 			File = "icon.png"
-			SampleMode = Point
-			MipLevels = max
+			SampleMode = Linear
 		}
 		Size = [32, 32]
 	}
@@ -133,31 +133,11 @@ Part : &<../base_part_terran.rules>/Part
 					}
 				]
 			}
-//			Roof
-//			{
-//				Layer = "roofs"
-//				DamageLevels
-//				[
-//					{
-//						File = "roof_4.png"
-//						NormalsFile = "roof_4_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_33.png"
-//						NormalsFile = "roof_4_33_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_66.png"
-//						NormalsFile = "roof_4_66_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//				]
-//			}
+		}
+
+		ConstructionStructureSprite : ^/0/ConstructionStructureSprite
+		{
+			AtlasSprite = &<../../../Structures/Vanilla/Structure_1x1_3QuarterMid\Structure_1x1_3QuarterMid.rules>/Part/Components/Graphics/Floor/DamageLevels/0
 		}
 
 		DestroyedEffects

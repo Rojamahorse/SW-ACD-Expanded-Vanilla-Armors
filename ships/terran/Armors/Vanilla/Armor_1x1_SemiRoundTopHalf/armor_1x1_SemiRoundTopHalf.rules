@@ -14,39 +14,24 @@ Part : &<../base_part_terran.rules>/Part
 
     Resources
     [
-     	[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
+		[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
     ]
 	//AIValueFactor = 0
 	Size = [1, 1]
 	AllowedContiguity = [Top, Bottom]
-	//SelectionTypeID = "armor"
-	//MaxHealth = 4500 //4000*3/4*1,5
-	//ExplosiveDamageAbsorption = 100%
-	//ExplosiveDamageResistance = 50%
-	//TypeCategories = [armor]
-	//ReceivableBuffs : ^/0/ReceivableBuffs []
-	//Flammable = false
-	//CreatePartWhenDestroyed = ""
-	//CreatePartPerTileWhenGrabbed = ""
-	//InitialPenetrationResistance = 12
+	UnderlyingPart = SW.expanded_v_structure_1x1_SemiRoundTopHalf
+
 	ContinuingPenetrationResistance = &InitialPenetrationResistance
-	//CrewSpeedFactor = 0
-	//Density = 3
-	//IsRotateable = true
-	//IsWalled = true
-	//IsSelfDestructible = false
+
 	ExternalWalls = [None]
 	InternalWalls = [BottomLeft,Left, TopLeft, TopRight, Right, BottomRight]
-	//AllowedDoorLocations = []
-	//GeneratorRequiresDoor = false
-	//GenerateRectCollider = false
+
 	EditorIcon
 	{
 		Texture
 		{
 			File = "icon.png"
-			SampleMode = Point
-			MipLevels = max
+			SampleMode = Linear
 		}
 		Size = [32, 32]
 	}
@@ -132,31 +117,11 @@ Part : &<../base_part_terran.rules>/Part
 					}
 				]
 			}
-//			Roof
-//			{
-//				Layer = "roofs"
-//				DamageLevels
-//				[
-//					{
-//						File = "roof_4.png"
-//						NormalsFile = "roof_4_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_33.png"
-//						NormalsFile = "roof_4_33_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_66.png"
-//						NormalsFile = "roof_4_66_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//				]
-//			}
+		}
+
+		ConstructionStructureSprite : ^/0/ConstructionStructureSprite
+		{
+			AtlasSprite = &<../../../Structures/Vanilla/Structure_1x1_SemiRoundTopHalf\Structure_1x1_SemiRoundTopHalf.rules>/Part/Components/Graphics/Floor/DamageLevels/0
 		}
 
 		DestroyedEffects

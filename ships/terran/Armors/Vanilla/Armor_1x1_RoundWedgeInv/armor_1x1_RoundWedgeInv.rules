@@ -14,28 +14,12 @@ Part : &<../base_part_terran.rules>/Part
 
     Resources
     [
-     	[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
+		[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
     ]
 	//AIValueFactor = 0
 	Size = [1, 1]
 	AllowedContiguity = [Right, Bottom]
-	//SelectionTypeID = "armor"
-	//MaxHealth = 2250 //4000*3/8*1,5
-	//ExplosiveDamageAbsorption = 100%
-	//ExplosiveDamageResistance = 50%
-	//TypeCategories = [armor]
-	//ReceivableBuffs : ^/0/ReceivableBuffs []
-	//Flammable = false
-	//CreatePartPerTileWhenDestroyed = ""
-	//CreatePartWhenDestroyed = ""
-	//CreatePartPerTileWhenGrabbed = ""
-	//InitialPenetrationResistance = 5
-	//ContinuingPenetrationResistance = &InitialPenetrationResistance
-	//CrewSpeedFactor = 0
-	//Density = 3
-	//IsRotateable = true
-	//IsWalled = true
-	//IsSelfDestructible = false
+	UnderlyingPart = SW.expanded_v_structure_1x1_RoundWedgeInv
 	ExternalWalls = [TopRight, Right, BottomRight, Bottom, BottomLeft]
 	InternalWalls = [Left, TopLeft, Top]
 	VirtualInternalCells
@@ -54,8 +38,7 @@ Part : &<../base_part_terran.rules>/Part
 		Texture
 		{
 			File = "icon.png"
-			SampleMode = Point
-			MipLevels = max
+			SampleMode = Linear
 		}
 		Size = [32, 32]
 	}
@@ -80,29 +63,6 @@ Part : &<../base_part_terran.rules>/Part
 				[0.16, 1]
 			]
 		}
-/*
-
-		Collider
-		{
-			Type = PolygonCollider
-			Vertices
-			[
-				[0, 1]
-				[0.64,0.64]
-				[1, 1]
-			]
-		}
-		Collider2
-		{
-			Type = PolygonCollider
-			Vertices
-			[
-				[1, 0]
-				[0.64,0.64]
-				[1, 1]
-			]
-		}
-*/
 
 		EmpAbsorber
 		{
@@ -163,31 +123,11 @@ Part : &<../base_part_terran.rules>/Part
 					}
 				]
 			}
-//			Roof
-//			{
-//				Layer = "roofs"
-//				DamageLevels
-//				[
-//					{
-//						File = "roof_4.png"
-//						NormalsFile = "roof_4_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_33.png"
-//						NormalsFile = "roof_4_33_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_66.png"
-//						NormalsFile = "roof_4_66_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//				]
-//			}
+		}
+
+		ConstructionStructureSprite : ^/0/ConstructionStructureSprite
+		{
+			AtlasSprite = &<../../../Structures/Vanilla/Structure_1x1_RoundWedgeInv\Structure_1x1_RoundWedgeInv.rules>/Part/Components/Graphics/Floor/DamageLevels/0
 		}
 
 		DestroyedEffects

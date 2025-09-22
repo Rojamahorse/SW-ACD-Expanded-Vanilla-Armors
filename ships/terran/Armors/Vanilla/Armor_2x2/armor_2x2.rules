@@ -36,7 +36,7 @@ Part : &<../base_part_terran.rules>/Part
 
     Resources
     [
-     	[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
+		[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
     ]
 	//AIValueFactor = 0
 	Size = [2, 2]
@@ -67,8 +67,7 @@ Part : &<../base_part_terran.rules>/Part
 		Texture
 		{
 			File = "icon.png"
-			SampleMode = Point
-			MipLevels = max
+			SampleMode = Linear
 		}
 		Size = [64, 64]
 	}
@@ -104,14 +103,14 @@ Part : &<../base_part_terran.rules>/Part
 						File = "armor.png"
 						Size = [2, 2]
 					}
-					/*{
+					{
 						File = "armor_33.png"
 						Size = [2, 2]
 					}
 					{
 						File = "armor_66.png"
 						Size = [2, 2]
-					}*/
+					}
 				]
 			}
 			Walls
@@ -122,51 +121,30 @@ Part : &<../base_part_terran.rules>/Part
 					{
 						File = "armor.png"
 						Size = [2, 2]
-				    }
-					/*{
+					}
+					{
 						File = "armor_33.png"
 						Size = [2, 2]
 					}
 					{
 						File = "armor_66.png"
 						Size = [2, 2]
-					}*/
+					}
 				]
 			}
-//			Roof
-//			{
-//				Layer = "roofs"
-//				DamageLevels
-//				[
-//					{
-//						File = "roof_4.png"
-//						NormalsFile = "roof_4_normals.png"
-//						Size = [2, 2]
-//					}
-//					/*{
-//						File = "roof_4_33.png"
-//						NormalsFile = "roof_4_33_normals.png"
-//						Size = [2, 2]
-//					}
-//					{
-//						File = "roof_4_66.png"
-//						NormalsFile = "roof_4_66_normals.png"
-//						Size = [2, 2]
-//					}*/
-//				]
-//			}
 		}
-/*
+
 		ConstructionStructureSprites
 		{
 			Type = SpriteGrid
 			IncludeWhenUnderConstruction = true
 			IncludeWhenNotUnderConstruction = false
 			Layer = "structure"
+			RectType = Physical
 			RandomUVRotation = true
 			AtlasSprite = &<./Data/ships/terran/structure/structure.rules>/Part/Components/Graphics/Floor/DamageLevels/0
 		}
-*/
+
 		DestroyedEffects
 		{
 			Type = DeathEffects

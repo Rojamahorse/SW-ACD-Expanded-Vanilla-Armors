@@ -1,0 +1,26 @@
+// RECTQTR_BAR_BOTTOM
+Layer = "walls"
+BlendCheckRectType = Physical
+RequireExternalWallsToBlend = true
+AllowUndefinedBlendSprites = true
+FlipHRotate = [2, 1, 0, 3]
+FlipVRotate = [0, 3, 2, 1]
+
+AmbiguousSprites // TL, T, TR, R, BR, B, BL, L
+[
+    // r0: Bottom=1 //TL, T, TR, R, BR, B, BL, L
+    { SituationCode="*****1**"; AllowRotation=true;
+      DamageLevels [ { File="../Borders/armor072.png"; Size=[1,1]; UVRotation=2 } ] }
+
+//    // r1: Left=1 //BL, L, TL, T, TR, R, BR, B (90° CW)
+//    { SituationCode="*******1"; AllowRotation=false;
+//      DamageLevels [ { File="../Borders/armor072.png"; Size=[1,1]; UVRotation=3 } ] }
+//
+//    // r2: Top=1 //BR, B, BL, L, TL, T, TR, R
+//    { SituationCode="*1******"; AllowRotation=false;
+//      DamageLevels [ { File="../Borders/armor072.png"; Size=[1,1]; UVRotation=0 } ] }
+//
+//    // r3: Right=1 //TR, R, BR, B, BL, L, TL, T
+//    { SituationCode="***1****"; AllowRotation=false;
+//      DamageLevels [ { File="../Borders/armor072.png"; Size=[1,1]; UVRotation=1 } ] }
+]

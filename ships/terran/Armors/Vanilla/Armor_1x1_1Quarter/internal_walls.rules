@@ -1,0 +1,295 @@
+	BASE_WALL_TEMPLATE
+	{
+	    Type  = BlendSprite
+	    Layer = "walls"                       // change to "roofs" etc if needed
+	    BlendCheckRectType = Physical
+	    RequireExternalWallsToBlend = true
+		AllowUndefinedBlendSprites = true
+	    //RequireInternalWallsToBlend = true
+
+	    // CRITICAL: keep flips predictable so we don't need *_Rev siblings:
+    	FlipHRotate = [2, 1, 0, 3]
+    	FlipVRotate = [0, 3, 2, 1]
+		AmbiguousSprites
+	    [
+		]
+	}
+	//=== TRI_CAP_TOPRIGHT =====================================================
+	// Location: top-right of the center tile. Adjust if your pivot differs.
+	TRI_CAP_TR_r0 : BASE_WALL_TEMPLATE
+	{
+	    // Rotation 0 (base “up”)
+	    OnlyWithRotation = 0
+	    Location = [0.5, -0.5]
+	    AmbiguousSprites
+	    [
+	        {
+	            SituationCode = "*0******"    // T=0 (no neighbor above)
+	            AllowRotation = false
+	            DamageLevels
+	            [
+	                { File = "../Borders/tri_armor3x.png";  Size=[1,1]; UVRotation=0 }
+	            ]
+	        }
+	    ]
+	}
+
+	TRI_CAP_TR_r1 : BASE_WALL_TEMPLATE
+	{
+	    // Rotation 1 (base “right”)
+	    OnlyWithRotation = 1
+	    Location = [0.5, -0.5]
+	    AmbiguousSprites
+	    [
+	        {
+	            SituationCode = "***0****"    // R=0
+	            AllowRotation = false
+	            DamageLevels
+	            [
+	                // If handedness looks off here, flip U:
+	                { File = "../Borders/tri_armor3x.png";  Size=[1,1]; UVRotation=1; MirrorU=true; }
+	            ]
+	        }
+	    ]
+	}
+
+	TRI_CAP_TR_r2 : BASE_WALL_TEMPLATE
+	{
+	    // Rotation 2 (base “down”)
+	    OnlyWithRotation = 2
+	    Location = [0.5, -0.5]
+	    AmbiguousSprites
+	    [
+	        {
+	            SituationCode = "*****0**"    // B=0
+	            AllowRotation = false
+	            DamageLevels
+	            [
+	                { File = "../Borders/tri_armor3x.png";  Size=[1,1]; UVRotation=2 }
+	            ]
+	        }
+	    ]
+	}
+
+	TRI_CAP_TR_r3 : BASE_WALL_TEMPLATE
+	{
+	    // Rotation 3 (base “left”)
+	    OnlyWithRotation = 3
+	    Location = [0.5, -0.5]
+	    AmbiguousSprites
+	    [
+	        {
+	            SituationCode = "*******0"    // L=0
+	            AllowRotation = false
+	            DamageLevels
+	            [
+	                // If needed, toggle MirrorU to keep the long edge aligned to the short side:
+	                { File = "../Borders/tri_armor3x.png";  Size=[1,1]; UVRotation=3; MirrorU=true }
+	            ]
+	        }
+	    ]
+	}
+//=== TRI_CAP_BOTTOMRIGHT ==================================================
+TRI_CAP_BR_r0 : BASE_WALL_TEMPLATE
+{
+    OnlyWithRotation = 0
+    Location = [0.5, 1.5]
+    AmbiguousSprites
+    [
+        {
+            SituationCode = "*****0**"   // B=0
+            AllowRotation = false
+            DamageLevels
+            [
+                { File = "../Borders/tri_armor3x.png";  Size=[1,1]; UVRotation=2; MirrorU=true; }
+            ]
+        }
+    ]
+}
+
+TRI_CAP_BR_r1 : BASE_WALL_TEMPLATE
+{
+    OnlyWithRotation = 1
+    Location = [0.5, 1.5]
+    AmbiguousSprites
+    [
+        {
+            SituationCode = "*******0"   // L=0
+            AllowRotation = false
+            DamageLevels
+            [
+                { File = "../Borders/tri_armor3x.png";  Size=[1,1]; UVRotation=3; MirrorU=true; }
+            ]
+        }
+    ]
+}
+
+TRI_CAP_BR_r2 : BASE_WALL_TEMPLATE
+{
+    OnlyWithRotation = 2
+    Location = [0.5, 1.5]
+    AmbiguousSprites
+    [
+        {
+            SituationCode = "*0******"   // T=0
+            AllowRotation = false
+            DamageLevels
+            [
+                { File = "../Borders/tri_armor3x.png";  Size=[1,1]; UVRotation=0 }
+            ]
+        }
+    ]
+}
+
+TRI_CAP_BR_r3 : BASE_WALL_TEMPLATE
+{
+    OnlyWithRotation = 3
+    Location = [0.5, 1.5]
+    AmbiguousSprites
+    [
+        {
+            SituationCode = "***0****"   // R=0
+            AllowRotation = false
+            DamageLevels
+            [
+                { File = "../Borders/tri_armor3x.png";  Size=[1,1]; UVRotation=1; MirrorU=true; }
+            ]
+        }
+    ]
+}
+//=== ARMOR072_TOP (north) ================================================
+ARMOR072_TOP_r0 : BASE_WALL_TEMPLATE
+{
+    OnlyWithRotation = 0
+    Location = [0.5, 0.5]    // adjust lateral nudge if needed
+    AmbiguousSprites
+    [
+        {
+            SituationCode = "*1******"   // T=1
+            AllowRotation = false
+            DamageLevels
+            [
+                { File = "../Borders/armor072.png"; Size=[1,1]; UVRotation=0 }
+            ]
+        }
+    ]
+}
+
+ARMOR072_TOP_r1 : BASE_WALL_TEMPLATE
+{
+    OnlyWithRotation = 1
+    Location = [0.5, 0.5]
+    AmbiguousSprites
+    [
+        {
+            SituationCode = "***1****"   // R=1
+            AllowRotation = false
+            DamageLevels
+            [
+                { File = "../Borders/armor072.png"; Size=[1,1]; UVRotation=1 }
+            ]
+        }
+    ]
+}
+
+ARMOR072_TOP_r2 : BASE_WALL_TEMPLATE
+{
+    OnlyWithRotation = 2
+    Location = [0.5, 0.5]
+    AmbiguousSprites
+    [
+        {
+            SituationCode = "*****1**"   // B=1
+            AllowRotation = false
+            DamageLevels
+            [
+                { File = "../Borders/armor072.png"; Size=[1,1]; UVRotation=2 }
+            ]
+        }
+    ]
+}
+
+ARMOR072_TOP_r3 : BASE_WALL_TEMPLATE
+{
+    OnlyWithRotation = 3
+    Location = [0.5, 0.5]
+    AmbiguousSprites
+    [
+        {
+            SituationCode = "*******1"   // L=1
+            AllowRotation = false
+            DamageLevels
+            [
+                { File = "../Borders/armor072.png"; Size=[1,1]; UVRotation=3 }
+            ]
+        }
+    ]
+}
+//=== ARMOR072_BOTTOM (south) =============================================
+ARMOR072_BOTTOM_r0 : BASE_WALL_TEMPLATE
+{
+    OnlyWithRotation = 0
+    Location = [0.22, 0.5]    // if you used [0.22, 0.5] before, try that here too
+    AmbiguousSprites
+    [
+        {
+            SituationCode = "*****1**"    // B=1
+            AllowRotation = false
+            DamageLevels
+            [
+                { File = "../Borders/armor072.png"; Size=[1,1]; UVRotation=2 }
+            ]
+        }
+    ]
+}
+
+ARMOR072_BOTTOM_r1 : BASE_WALL_TEMPLATE
+{
+    OnlyWithRotation = 1
+    Location = [0.22, 0.5]
+    AmbiguousSprites
+    [
+        {
+            SituationCode = "*******1"    // L=1
+            AllowRotation = false
+            DamageLevels
+            [
+                { File = "../Borders/armor072.png"; Size=[1,1]; UVRotation=3 }
+            ]
+        }
+    ]
+}
+
+ARMOR072_BOTTOM_r2 : BASE_WALL_TEMPLATE
+{
+    OnlyWithRotation = 2
+    Location = [0.22, 0.5]
+    AmbiguousSprites
+    [
+        {
+            SituationCode = "*1******"    // T=1
+            AllowRotation = false
+            DamageLevels
+            [
+                { File = "../Borders/armor072.png"; Size=[1,1]; UVRotation=0 }
+            ]
+        }
+    ]
+}
+
+ARMOR072_BOTTOM_r3 : BASE_WALL_TEMPLATE
+{
+    OnlyWithRotation = 3
+    Location = [0.22, 0.5]
+    AmbiguousSprites
+    [
+        {
+            SituationCode = "***1****"    // R=1
+            AllowRotation = false
+            DamageLevels
+            [
+                { File = "../Borders/armor072.png"; Size=[1,1]; UVRotation=1 }
+            ]
+        }
+    ]
+}

@@ -3,11 +3,8 @@ Part : &<../base_part_terran.rules>/Part
 	NameKey = "Parts/EXPVArmor1x2RoundWedgeInvL"
 	IconNameKey = "Parts/EXPVArmor1x2RoundWedgeInvLIcon"
 	ID = SW.expanded_v_armor_1x2_RoundWedgeInv_L
-	//OtherIDs = [SW.expanded_v_armor_1x2_RoundWedgeInv_R, Kroom.Armor_1x2_RoundWedgeInv_R, Armor_1x2_RoundWedgeInvR, SW.Armor1x2_RoundWedgeInvR, Armor1x2_RoundWedgeInvR, Kroom.Armor_1x2_RoundWedgeInv_L, Armor_1x2_RoundWedgeInvL, SW.Armor1x2_RoundWedgeInvL, Armor1x2_RoundWedgeInvL]
 	FlipWhenLoadingIDs = [SW.expanded_v_armor_1x2_RoundWedgeInv_R /*, Kroom.Armor_1x2_RoundWedgeInv_R, Armor_1x2_RoundWedgeInvR, SW.Armor1x2_RoundWedgeInvR, Armor1x2_RoundWedgeInvR*/]
 	
-	//DescriptionKey = "Parts/ExpVArmorDesc"
-	//EditorReplacementPartID = ""
 	MaxHealth = floor((&<../base_part_terran.rules>/MaxHealth) * (&~/Scale))	
 	InitialPenetrationResistance = ceil((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale) * 0.9)
 
@@ -15,29 +12,13 @@ Part : &<../base_part_terran.rules>/Part
 
     Resources
     [
-     	[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
+		[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
     ]
-	//AIValueFactor = 0
 	Size = [1, 2]
 	IsFlippable = true
 	AllowedContiguity = [Right, Bottom]
-	//SelectionTypeID = "armor"
-	//MaxHealth = 4500 //8000*3/8*1.5
-	//ExplosiveDamageAbsorption = 100%
-	//ExplosiveDamageResistance = 50%
-	//TypeCategories = [armor]
-	//ReceivableBuffs : ^/0/ReceivableBuffs []
-	//Flammable = false
-	//UnderlyingPartPerTile = ""
-	UnderlyingPart = cosmoteer.structure_1x2_wedge
-	//CreatePartPerTileWhenGrabbed = ""
-	//InitialPenetrationResistance = 8
-	//ContinuingPenetrationResistance = &InitialPenetrationResistance
-	//CrewSpeedFactor = 0
-	//Density = 3
-	//IsRotateable = true
-	//IsWalled = true
-	//IsSelfDestructible = false
+	UnderlyingPart = SW.expanded_v_structure_1x2_RoundWedgeInv_L
+
 	ExternalWallsByCell
 	[
 		{
@@ -65,18 +46,13 @@ Part : &<../base_part_terran.rules>/Part
 		{ExternalCell=[0, -1]; InternalCell=[1, 0]}
 		{ExternalCell=[-1, 1]; InternalCell=[0, 2]}
 	]
-	//AllowedDoorLocations = []
-	//GeneratorRequiresDoor = false
-	FlipHRotate = [0, 3, 2, 1]
-	FlipVRotate = [2, 1, 0, 3]
-	//GenerateRectCollider = false
+
 	EditorIcon
 	{
 		Texture
 		{
 			File = "icon.png"
-			SampleMode = Point
-			MipLevels = max
+			SampleMode = Linear
 		}
 		Size = [32, 64]
 	}
@@ -103,41 +79,6 @@ Part : &<../base_part_terran.rules>/Part
 			]
 		}
 
-/*
-		DumyCollider//copymelol
-		{
-			Type = PolygonCollider
-			Vertices
-			[
-				[1-1/64, 0.50-1/64]
-				[1-1/64, 0.50+1/64]
-				[1+1/64, 0.50+1/64]
-				[1+1/64, 0.50-1/64]
-			]
-		}
-		
-		Collider
-		{
-			Type = PolygonCollider
-			Vertices
-			[
-				[0, 2]
-				[0.64,1.28]
-				[1, 2]
-			]
-		}
-
-		Collider2
-		{
-			Type = PolygonCollider
-			Vertices
-			[
-				[1, 0]
-				[0.64,1.28]
-				[1, 2]
-			]
-		}
-*/
 		EmpAbsorber
 		{
 			Type = ExplosiveResourceDrainSink
@@ -191,35 +132,12 @@ Part : &<../base_part_terran.rules>/Part
 					}
 				]
 			}
-//			Roof
-//			{
-//				Layer = "roofs"
-//				DamageLevels
-//				[
-//					{
-//						File = "roof_4.png"
-//						NormalsFile = "roof_4_normals.png"
-//						Size = [1, 2]
-//					}
-//					{
-//						File = "roof_4_33.png"
-//						NormalsFile = "roof_4_33_normals.png"
-//						Size = [1, 2]
-//					}
-//					{
-//						File = "roof_4_66.png"
-//						NormalsFile = "roof_4_66_normals.png"
-//						Size = [1, 2]
-//					}
-//				]
-//			}
 		}
 
-		Blueprints
+		ConstructionStructureSprite : ^/0/ConstructionStructureSprite
 		{
-			Type = BlueprintSprite
-			File = "blueprints.png"
-			Size = [1, 2]
+			Location = [.5, 1]
+			AtlasSprite = &<../../../Structures/Vanilla/Structure_1x2_RoundWedgeInv\Structure_1x2_RoundWedgeInv_L.rules>/Part/Components/Graphics/Floor/DamageLevels/0
 		}
 
 		DestroyedEffects
@@ -227,6 +145,13 @@ Part : &<../base_part_terran.rules>/Part
 			Type = DeathEffects
 			MediaEffects = &/COMMON_EFFECTS/SmallPartDestroyedDry
 			Location = [.5, 1]
+		}
+
+		Blueprints
+		{
+			Type = BlueprintSprite
+			File = "blueprints.png"
+			Size = [1, 2]
 		}
 	}
 

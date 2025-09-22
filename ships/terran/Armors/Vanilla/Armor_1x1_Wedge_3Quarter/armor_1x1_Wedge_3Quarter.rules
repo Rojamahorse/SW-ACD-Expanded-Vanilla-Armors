@@ -16,25 +16,10 @@ Part : &<../base_part_terran.rules>/Part
     [
      	[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
     ]
-	//AIValueFactor = 0
 	Size = [1, 1]
 	AllowedContiguity = [Right, Bottom]
-	//SelectionTypeID = "armor"
-	//MaxHealth = 2250 //4000*3/8*1.5
-	//ExplosiveDamageAbsorption = 100%
-	//ExplosiveDamageResistance = 50%
-	//TypeCategories = [armor]
-	//ReceivableBuffs : ^/0/ReceivableBuffs []
-	//Flammable = false
-	//CreatePartWhenDestroyed = ""
-	//CreatePartPerTileWhenGrabbed = ""
-	//InitialPenetrationResistance = 4.5
-	//ContinuingPenetrationResistance = &InitialPenetrationResistance
-	//CrewSpeedFactor = 0
-	//Density = 3
-	//IsRotateable = true
-	//IsWalled = true
-	//IsSelfDestructible = false
+	UnderlyingPart = SW.expanded_v_structure_1x1_Wedge_3Quarter
+
 	ExternalWalls = [ BottomRight]
 	InternalWalls = [ BottomLeft, Left, TopLeft, Top, TopRight]
 	VirtualInternalCells
@@ -42,18 +27,16 @@ Part : &<../base_part_terran.rules>/Part
 		{ExternalCell=[0, 1]; InternalCell=[1, 0]}
 		{ExternalCell=[1, 0]; InternalCell=[0, 1]}
 	]
-	//AllowedDoorLocations = []
-	//GeneratorRequiresDoor = false
-	FlipHRotate = [1, 0, 3, 2]
-	FlipVRotate = [3, 2, 1, 0]
-	//GenerateRectCollider = false
+
+	//FlipHRotate = [1, 0, 3, 2]
+	//FlipVRotate = [3, 2, 1, 0]
+
 	EditorIcon
 	{
 		Texture
 		{
 			File = "icon.png"
-			SampleMode = Point
-			MipLevels = max
+			SampleMode = Linear
 		}
 		Size = [32, 32]
 	}
@@ -140,31 +123,12 @@ Part : &<../base_part_terran.rules>/Part
 					}
 				]
 			}
-//			Roof
-//			{
-//				Layer = "roofs"
-//				DamageLevels
-//				[
-//					{
-//						File = "roof_4.png"
-//						NormalsFile = "roof_4_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_33.png"
-//						NormalsFile = "roof_4_33_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_66.png"
-//						NormalsFile = "roof_4_66_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//				]
-//			}
+		}
+
+		// Wedge 3/4
+		ConstructionStructureSprite : ^/0/ConstructionStructureSprite
+		{
+			AtlasSprite = &<../../../Structures/Vanilla/Structure_1x1_Wedge_3Quarter\Structure_1x1_Wedge_3Quarter.rules>/Part/Components/Graphics/Floor/DamageLevels/0
 		}
 
 		DestroyedEffects

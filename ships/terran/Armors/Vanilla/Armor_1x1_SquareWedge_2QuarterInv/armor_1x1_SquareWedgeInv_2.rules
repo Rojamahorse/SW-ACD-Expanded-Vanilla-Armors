@@ -13,10 +13,11 @@ Part : &<../base_part_terran.rules>/Part
 
     Resources
     [
-     	[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
+		[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
     ]
 	//AIValueFactor = 0
 	Size = [1, 1]
+	//UnderlyingPart = SW.expanded_v_structure_1x1_Wedge_2QuarterInv
 	//AllowedContiguity = [Right, Bottom]
 	//SelectionTypeID = "armor"
 	//MaxHealth = 4200 //4000/4*1,5
@@ -52,8 +53,7 @@ Part : &<../base_part_terran.rules>/Part
 		Texture
 		{
 			File = "icon.png"
-			SampleMode = Point
-			MipLevels = max
+			SampleMode = Linear
 		}
 		Size = [32, 32]
 	}

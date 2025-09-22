@@ -1,0 +1,26 @@
+// RECTQTR_TRI_TR
+Layer = "walls"
+BlendCheckRectType = Physical
+RequireExternalWallsToBlend = true
+AllowUndefinedBlendSprites = true
+FlipHRotate = [2, 1, 0, 3]
+FlipVRotate = [0, 3, 2, 1]
+
+AmbiguousSprites 
+[
+    // r0: Top=0 AND Right=0 //TL, T, TR, R, BR, B, BL, L
+    { SituationCode="**0*****"; AllowRotation=true;
+      DamageLevels [ { File="../Borders/tri_armor3x.png"; Size=[1,1]; UVRotation=0 } ] }
+
+//    // r1: Right=0 AND Bottom=0 //BL, L, TL, T, TR, R, BR, B (90° CW)
+//    { SituationCode="***0*0**"; AllowRotation=false;
+//      DamageLevels [ { File="../Borders/tri_armor3x.png"; Size=[1,1]; UVRotation=1 } ] }
+//
+//    // r2: Bottom=0 AND Left=0 //BR, B, BL, L, TL, T, TR, R
+//    { SituationCode="*****0*0"; AllowRotation=false;
+//      DamageLevels [ { File="../Borders/tri_armor3x.png"; Size=[1,1]; UVRotation=2 } ] }
+//
+//    // r3: Left=0 AND Top=0 //TR, R, BR, B, BL, L, TL, T
+//    { SituationCode="*0*****0"; AllowRotation=false;
+//      DamageLevels [ { File="../Borders/tri_armor3x.png"; Size=[1,1]; UVRotation=3 } ] }
+]

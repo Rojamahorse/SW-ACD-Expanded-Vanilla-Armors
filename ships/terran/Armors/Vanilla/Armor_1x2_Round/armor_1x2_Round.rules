@@ -14,11 +14,12 @@ Part : &<../base_part_terran.rules>/Part
 
     Resources
     [
-     	[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
+		[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
     ]
 	//AIValueFactor = 0
 	Size = [1, 2]
 	AllowedContiguity = [Bottom]
+	UnderlyingPart = SW.expanded_v_structure_1x2_Round
 	//SelectionTypeID = "armor"
 	//MaxHealth = 9000 //8000*3/4*1.5
 	//ExplosiveDamageAbsorption = 100%
@@ -71,8 +72,7 @@ Part : &<../base_part_terran.rules>/Part
 		Texture
 		{
 			File = "icon.png"
-			SampleMode = Point
-			MipLevels = max
+			SampleMode = Linear
 		}
 		Size = [32, 64]
 	}
@@ -158,28 +158,12 @@ Part : &<../base_part_terran.rules>/Part
 					}
 				]
 			}
-//			Roof
-//			{
-//				Layer = "roofs"
-//				DamageLevels
-//				[
-//					{
-//						File = "roof_4.png"
-//						NormalsFile = "roof_4_normals.png"
-//						Size = [1, 2]
-//					}
-//					{
-//						File = "roof_4_33.png"
-//						NormalsFile = "roof_4_33_normals.png"
-//						Size = [1, 2]
-//					}
-//					{
-//						File = "roof_4_66.png"
-//						NormalsFile = "roof_4_66_normals.png"
-//						Size = [1, 2]
-//					}
-//				]
-//			}
+		}
+
+		ConstructionStructureSprite : ^/0/ConstructionStructureSprite
+		{
+			Location = [.5, 1]
+			AtlasSprite = &<../../../Structures/Vanilla/Structure_1x2_Round\Structure_1x2_Round.rules>/Part/Components/Graphics/Floor/DamageLevels/0
 		}
 
 		Blueprints

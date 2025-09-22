@@ -3,10 +3,7 @@ Part : &<../base_part_terran.rules>/Part
 	NameKey = "Parts/EXPVArmor1x1TipBit01"
 	IconNameKey = "Parts/EXPVArmor1x1TipBit01Icon"
 	ID = SW.expanded_v_armor_1x1_TipBit01
-	//OtherIDs = [Armor_1x1_TipBit01, Kroom.Armor_1x1_TipBit01]
-	
-	//DescriptionKey = "Parts/ExpVArmorDesc"
-	//EditorReplacementPartID = ""
+
 	MaxHealth = floor((&<../base_part_terran.rules>/MaxHealth) * (&~/Scale))	
 	InitialPenetrationResistance = ceil((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale) * 0.9)
 
@@ -16,26 +13,10 @@ Part : &<../base_part_terran.rules>/Part
     [
      	[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
     ]
-	//AIValueFactor = 0
 	Size = [1, 1]
 	AllowedContiguity = [Bottom]
-	UnderlyingPart = cosmoteer.structure_tri
-	//SelectionTypeID = "armor"
-	//MaxHealth = 1500 //4000/4*1,5
-	//ExplosiveDamageAbsorption = 100%
-	//ExplosiveDamageResistance = 50%
-	//TypeCategories = [armor]
-	//ReceivableBuffs : ^/0/ReceivableBuffs []
-	//Flammable = false
-	//CreatePartWhenDestroyed = ""
-	//CreatePartPerTileWhenGrabbed = ""
-	//InitialPenetrationResistance = 6
-	//ContinuingPenetrationResistance = &InitialPenetrationResistance
-	//CrewSpeedFactor = 0
-	//Density = 3
-	//IsRotateable = true
-	//IsWalled = true
-	//IsSelfDestructible = false
+	UnderlyingPart = SW.expanded_v_structure_1x1_TipBit01
+
 	ExternalWalls = [None]
 	InternalWalls = [BottomLeft, Left, TopLeft, Top, TopRight, Right, BottomRight]
 	//AllowedDoorLocations = []
@@ -46,8 +27,7 @@ Part : &<../base_part_terran.rules>/Part
 		Texture
 		{
 			File = "icon.png"
-			SampleMode = Point
-			MipLevels = max
+			SampleMode = Linear
 		}
 		Size = [32, 32]
 	}
@@ -134,31 +114,524 @@ Part : &<../base_part_terran.rules>/Part
 					}
 				]
 			}
-//			Roof
-//			{
-//				Layer = "roofs"
-//				DamageLevels
-//				[
-//					{
-//						File = "roof_4.png"
-//						NormalsFile = "roof_4_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_33.png"
-//						NormalsFile = "roof_4_33_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_66.png"
-//						NormalsFile = "roof_4_66_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//				]
-//			}
+
+		// ---------- BLUEPRINT BORDERS ----------
+		BlueprintBorder_Rot0   // external bottom neighbor (rotation 0)
+		{
+		    Type = BlueprintBlendSprite
+		    OnlyWithRotation = 0
+		    Location = [0.5, 1.5]
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*****0**"           // bottom edge present
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/blueprints_split025.png"; Size=[1,1]; UVRotation=2 }
+		            ]
+		        }
+		    ]
+		}
+		BlueprintBorder_Int_Rot0   // internal split when bottom is NOT external
+		{
+		    Type = BlueprintBlendSprite
+		    OnlyWithRotation = 0
+		    Location = [0.5, 0.5]
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*****1**"           // bottom edge NOT present externally
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/blueprints_internalsplit025.png"; Size=[1,1]; UVRotation=2 }
+		            ]
+		        }
+		    ]
+		}
+		
+		BlueprintBorder_Rot1
+		{
+		    Type = BlueprintBlendSprite
+		    OnlyWithRotation = 1
+		    Location = [0.5, 1.5]
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*******0"           // left edge present
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/blueprints_split025.png"; Size=[1,1]; UVRotation=3 }
+		            ]
+		        }
+		    ]
+		}
+		BlueprintBorder_Int_Rot1
+		{
+		    Type = BlueprintBlendSprite
+		    OnlyWithRotation = 1
+		    Location = [0.5, 0.5]
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*******1"           // left edge NOT present
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/blueprints_internalsplit025.png"; Size=[1,1]; UVRotation=3 }
+		            ]
+		        }
+		    ]
+		}
+		
+		BlueprintBorder_Rot2
+		{
+		    Type = BlueprintBlendSprite
+		    OnlyWithRotation = 2
+		    Location = [0.5, 1.5]
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*0******"           // top edge present
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/blueprints_split025.png"; Size=[1,1]; UVRotation=0 }
+		            ]
+		        }
+		    ]
+		}
+		BlueprintBorder_Int_Rot2
+		{
+		    Type = BlueprintBlendSprite
+		    OnlyWithRotation = 2
+		    Location = [0.5, 0.5]
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*1******"           // top edge NOT present
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/blueprints_internalsplit025.png"; Size=[1,1]; UVRotation=0 }
+		            ]
+		        }
+		    ]
+		}
+		
+		BlueprintBorder_Rot3
+		{
+		    Type = BlueprintBlendSprite
+		    OnlyWithRotation = 3
+		    Location = [0.5, 1.5]
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "***0****"           // right edge present
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/blueprints_split025.png"; Size=[1,1]; UVRotation=1 }
+		            ]
+		        }
+		    ]
+		}
+		BlueprintBorder_Int_Rot3
+		{
+		    Type = BlueprintBlendSprite
+		    OnlyWithRotation = 3
+		    Location = [0.5, 0.5]
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "***1****"           // right edge NOT present
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/blueprints_internalsplit025.png"; Size=[1,1]; UVRotation=1 }
+		            ]
+		        }
+		    ]
+		}
+		
+		
+		// ---------- ROOF BORDERS ----------
+		RoofBorder_Rot0
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 0
+		    Location = [0.5, 1.5]
+		    Layer = "roofs"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*****0**"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/roof_split025.png"; Size=[1,1]; UVRotation=2 }
+		            ]
+		        }
+		    ]
+		}
+		RoofBorder_Int_Rot0
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 0
+		    Location = [0.5, 0.5]
+		    Layer = "roofs"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*****1**"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/roof_internalsplit025.png"; Size=[1,1]; UVRotation=2 }
+		            ]
+		        }
+		    ]
+		}
+		
+		RoofBorder_Rot1
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 1
+		    Location = [0.5, 1.5]
+		    Layer = "roofs"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*******0"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/roof_split025.png"; Size=[1,1]; UVRotation=3 }
+		            ]
+		        }
+		    ]
+		}
+		RoofBorder_Int_Rot1
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 1
+		    Location = [0.5, 0.5]
+		    Layer = "roofs"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*******1"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/roof_internalsplit025.png"; Size=[1,1]; UVRotation=3 }
+		            ]
+		        }
+		    ]
+		}
+		
+		RoofBorder_Rot2
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 2
+		    Location = [0.5, 1.5]
+		    Layer = "roofs"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*0******"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/roof_split025.png"; Size=[1,1]; UVRotation=0 }
+		            ]
+		        }
+		    ]
+		}
+		RoofBorder_Int_Rot2
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 2
+		    Location = [0.5, 0.5]
+		    Layer = "roofs"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*1******"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/roof_internalsplit025.png"; Size=[1,1]; UVRotation=0 }
+		            ]
+		        }
+		    ]
+		}
+		
+		RoofBorder_Rot3
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 3
+		    Location = [0.5, 1.5]
+		    Layer = "roofs"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "***0****"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/roof_split025.png"; Size=[1,1]; UVRotation=1 }
+		            ]
+		        }
+		    ]
+		}
+		RoofBorder_Int_Rot3
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 3
+		    Location = [0.5, 0.5]
+		    Layer = "roofs"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "***1****"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/roof_internalsplit025.png"; Size=[1,1]; UVRotation=1 }
+		            ]
+		        }
+		    ]
+		}
+		
+		
+		// ---------- WALL BORDERS ----------
+		WallBorder_Rot0
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 0
+		    Location = [0.5, 1.5]
+		    Layer = "walls"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*****0**"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/armor_split025.png"; Size=[1,1]; UVRotation=2 }
+		            ]
+		        }
+		    ]
+		}
+		WallBorder_Int_Rot0
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 0
+		    Location = [0.5, 0.5]
+		    Layer = "walls"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*****1**"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/armor_internalsplit025.png"; Size=[1,1]; UVRotation=2 }
+		            ]
+		        }
+		    ]
+		}
+		
+		WallBorder_Rot1
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 1
+		    Location = [0.5, 1.5]
+		    Layer = "walls"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*******0"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/armor_split025.png"; Size=[1,1]; UVRotation=3 }
+		            ]
+		        }
+		    ]
+		}
+		WallBorder_Int_Rot1
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 1
+		    Location = [0.5, 0.5]
+		    Layer = "walls"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*******1"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/armor_internalsplit025.png"; Size=[1,1]; UVRotation=3 }
+		            ]
+		        }
+		    ]
+		}
+		
+		WallBorder_Rot2
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 2
+		    Location = [0.5, 1.5]
+		    Layer = "walls"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*0******"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/armor_split025.png"; Size=[1,1]; UVRotation=0 }
+		            ]
+		        }
+		    ]
+		}
+		WallBorder_Int_Rot2
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 2
+		    Location = [0.5, 0.5]
+		    Layer = "walls"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "*1******"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/armor_internalsplit025.png"; Size=[1,1]; UVRotation=0 }
+		            ]
+		        }
+		    ]
+		}
+		
+		WallBorder_Rot3
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 3
+		    Location = [0.5, 1.5]
+		    Layer = "walls"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "***0****"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/armor_split025.png"; Size=[1,1]; UVRotation=1 }
+		            ]
+		        }
+		    ]
+		}
+		WallBorder_Int_Rot3
+		{
+		    Type = BlendSprite
+		    OnlyWithRotation = 3
+		    Location = [0.5, 0.5]
+		    Layer = "walls"
+		    BlendCheckRectType = Physical
+		    AllowUndefinedBlendSprites = true
+		    RequireExternalWallsToBlend = true
+		    AmbiguousSprites
+		    [
+		        {
+		            SituationCode = "***1****"
+		            AllowRotation = false
+		            DamageLevels
+		            [
+		                { File = "../Borders/armor_internalsplit025.png"; Size=[1,1]; UVRotation=1 }
+		            ]
+		        }
+		    ]
+		}
+		}
+
+		ConstructionStructureSprite : ^/0/ConstructionStructureSprite
+		{
+			AtlasSprite = &<../../../Structures/Vanilla/Structure_1x1_TipBit01\Structure_1x1_TipBit01.rules>/Part/Components/Graphics/Floor/DamageLevels/0
 		}
 
 		DestroyedEffects

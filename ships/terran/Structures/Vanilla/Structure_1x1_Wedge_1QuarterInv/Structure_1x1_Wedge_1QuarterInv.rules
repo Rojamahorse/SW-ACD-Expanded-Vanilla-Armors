@@ -1,62 +1,63 @@
-Part : &<../base_1x1armor.rules>/Part
+Part : <../base_part_terran_structure.rules>/Part
 {
-	NameKey = "Parts/Structure_1x1_Wedge_1QuarterInv"
-	IconNameKey = "Parts/Structure_1x1_Wedge_1QuarterInv_Icon"
+	NameKey = "Parts/EXPVStructure1x1Wedge1QuarterInv"
+	IconNameKey = "Parts/EXPVStructure1x1Wedge1QuarterInvIcon"
 	ID = SW.expanded_v_structure_1x1_Wedge_1QuarterInv
-	//OtherIDs = [Structure_1x1_Wedge_1QuarterInv]
-	EditorGroup = "Misc"
-	DescriptionKey = "Parts/BasicStructureDesc"
-	Cost = floor((&MaxHealth)*0.05)//45
-	Size = [1, 1]
-	SelectionTypeID = "structure"
-	AllowedContiguity = [Top, Right, Bottom, Left]
-	Density = .333
-	MaxHealth = 900//0.3t
-	HealthType = Structural
-	TypeCategories = [structure]
-	Flammable = false
-	CreatePartPerTileWhenDestroyed = ""
-	CreatePartPerTileWhenGrabbed = ""
-	InitialPenetrationResistance = 0
-	ContinuingPenetrationResistance = &InitialPenetrationResistance
-	CrewSpeedFactor = 0
-	IsExternal = true
-	ExternalWalls = [None]
-	InternalWalls = [All]
-	IsRotateable = true
-	IsWalled = false
-	AllowedDoorLocations = []
-	GeneratorRequiresDoor = false
-	NoAutoDoors = true
-	FlipHRotate = [1, 0, 3, 2]
-	FlipVRotate = [3, 2, 1, 0]
-	CustomCollider
+	EditorGroup = "Structure"
+
+	Resources
 	[
-		[0.22, 0]
-		[1, 0]
-		[1, 1]
-		[0, 1]
-		[0.22, 1]
+		[steel, ceil((ceil((&<../base_part_terran_structure.rules>/Cost)*(&~/Scale)))/4)]
 	]
+	AllowedContiguity = [Top, Right, Bottom, Left]
+	MaxHealth = floor((&<../base_part_terran_structure.rules>/DefaultHealth) * (&~/Scale))
+	InitialPenetrationResistance = ceil((&<../base_part_terran_structure.rules>/DefaultInitialPenetrationResistance) * (&~/Scale) * 0.9)
+	Density = (&<../base_part_terran_structure.rules>/DefaultDensity)
+	CellOccupancyFactor = ceil((&~/Scale))
+	IsRotateable = true
+//	VirtualInternalCells
+//	[
+//		{ExternalCell=[-1, 0]; InternalCell=[0, 1]}
+//		{ExternalCell=[1, 0]; InternalCell=[0, 1]}
+//	]
+	//FlipHRotate = [2, 1, 0, 3]
+	//FlipVRotate = [0, 3, 2, 1]
+	GenerateRectCollider = false
 	EditorIcon
 	{
 		Texture
 		{
-			File = "Structure.png"
+			File = "icon.png"
 			SampleMode = Linear
 		}
 		Size = [32, 32]
 	}
-	Components
+	Components : ^/0/Components
 	{
-		BlueprintSprite
+		ConstructionEffects : ^/0/ConstructionEffects
 		{
-			Type=BlueprintSprite;
-			File = "blueprints.png"
-			Size = [1, 1]
+			Location = [.5, .5]
+			AtlasSprite
+			{
+				File = "structure_mask_combined.png"
+				NormalsFile = "structure_normals.png"
+				Size = [1, 1]
+				//VertexColor = [255, 0, 0, 255]
+			}
 		}
 
-
+		Collider
+		{
+			Type = PolygonCollider
+			Vertices
+			[
+				[0.22, 0]
+				[1, 0]
+				[1, 1]
+				[0, 1]
+				[0, 0.22]
+			]
+		}
 
 		Graphics
 		{
@@ -64,28 +65,27 @@ Part : &<../base_1x1armor.rules>/Part
 			Location = [0.5, 0.5]
 			Floor
 			{
-				Layer = "floors"
+				Layer = "structure"
 				DamageLevels
 				[
 					{
-						File = "Structure.png"
+						File = "structure.png"
+						NormalsFile = "structure_normals.png"
 						Size = [1, 1]
-						UVRotation = 0
 					}
 					{
-						File = "Structure_33.png"
+						File = "structure_33.png"
+						NormalsFile = "structure_33_normals.png"
 						Size = [1, 1]
-						UVRotation = 0
 					}
 					{
-						File = "Structure_66.png"
+						File = "structure_66.png"
+						NormalsFile = "structure_66_normals.png"
 						Size = [1, 1]
-						UVRotation = 0
 					}
 				]
 			}
 		}
-
 
 		DestroyedEffects
 		{
@@ -93,5 +93,13 @@ Part : &<../base_1x1armor.rules>/Part
 			MediaEffects = &/COMMON_EFFECTS/StructureDestroyed
 			Location = [.5, .5]
 		}
+
+		Blueprints
+		{
+			Type = BlueprintSprite
+			File = "blueprints.png"
+			Size = [1, 1]
+		}
 	}
 }
+Scale = (1*7/8)

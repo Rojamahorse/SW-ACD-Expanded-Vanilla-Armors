@@ -3,39 +3,19 @@ Part : &<../base_part_terran.rules>/Part
 	NameKey = "Parts/EXPVArmor1x12Quarter"
 	IconNameKey = "Parts/EXPVArmor1x12QuarterIcon"
 	ID = SW.expanded_v_armor_1x1_2Quarter
-	//OtherIDs = [Kroom.Armor_1x1_2Quarter, Armor_1x1_2Quarter]
 	
-	//DescriptionKey = "Parts/ExpVArmorDesc"
-	//EditorReplacementPartID = ""
 	MaxHealth = floor((&<../base_part_terran.rules>/MaxHealth) * (&~/Scale))	
 	InitialPenetrationResistance = ceil((&<../base_part_terran.rules>/InitialPenetrationResistance) * (&~/Scale) * 0.9)
 
 	Density = (&<../base_part_terran.rules>/Density)
 
-    Resources
-    [
-     	[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
-    ]
-	//AIValueFactor = 0
+	Resources
+	[
+		[steel, ceil((&<../base_part_terran.rules>/Cost)*(&~/Scale))]
+	]
 	Size = [1, 1]
 	AllowedContiguity = [Top, Right, Bottom]
-	//SelectionTypeID = "armor"
-	//MaxHealth = 3000 //4000/2*1,5
-	//ExplosiveDamageAbsorption = 100%
-	//ExplosiveDamageResistance = 50%
-	//TypeCategories = [armor]
-	//ReceivableBuffs : ^/0/ReceivableBuffs []
-	//Flammable = false
-	//UnderlyingPartPerTile = ""
-	//UnderlyingPart = ""
-	//CreatePartPerTileWhenGrabbed = ""
-	//InitialPenetrationResistance = 4
-	//ContinuingPenetrationResistance = &InitialPenetrationResistance
-	//CrewSpeedFactor = 0
-	//Density = 3
-	//IsRotateable = true
-	//IsWalled = true
-	//IsSelfDestructible = false
+	UnderlyingPart = SW.expanded_v_structure_1x1_2Quarter
 	ExternalWalls = [TopRight, Right, BottomRight]
 	InternalWalls = [TopLeft, Left, BottomLeft]
 	VirtualInternalCells
@@ -43,18 +23,13 @@ Part : &<../base_part_terran.rules>/Part
 		{ExternalCell=[0, -1]; InternalCell=[1, 0]}
 		{ExternalCell=[0, 1]; InternalCell=[1, 0]}
 	]
-	//AllowedDoorLocations = []
-	//GeneratorRequiresDoor = false
-	//FlipHRotate = [2, 1, 0, 3]
-	//FlipVRotate = [0, 3, 2, 1]
-	//GenerateRectCollider = false
+
 	EditorIcon
 	{
 		Texture
 		{
 			File = "icon.png"
-			SampleMode = Point
-			MipLevels = max
+			SampleMode = Linear
 		}
 		Size = [32, 32]
 	}
@@ -86,7 +61,7 @@ Part : &<../base_part_terran.rules>/Part
 		{
 			Type = ExplosiveResourceDrainSink
 			ResourceType = battery
-			AbsorbsResourceDrain = ceil((&~/Part/MaxHealth)/4) // 750
+			AbsorbsResourceDrain = ceil((&~/Part/MaxHealth)/4)
 			RecoveryRate = ceil(&AbsorbsResourceDrain) * 0.1
 		}
 
@@ -94,7 +69,7 @@ Part : &<../base_part_terran.rules>/Part
 		{
 			Type = Graphics
 			Location = [0.5, 0.5]
-			Floor // This is needed so that armor shows up in ship ghosts.
+			Floor
 			{
 				Layer = "floors"
 				DamageLevels
@@ -141,31 +116,11 @@ Part : &<../base_part_terran.rules>/Part
 					}
 				]
 			}
-//			Roof
-//			{
-//				Layer = "roofs"
-//				DamageLevels
-//				[
-//					{
-//						File = "roof_4.png"
-//						NormalsFile = "roof_4_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_33.png"
-//						NormalsFile = "roof_4_33_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//					{
-//						File = "roof_4_66.png"
-//						NormalsFile = "roof_4_66_normals.png"
-//						Size = [1, 1]
-//						UVRotation = 0
-//					}
-//				]
-//			}
+		}
+
+		ConstructionStructureSprite : ^/0/ConstructionStructureSprite
+		{
+			AtlasSprite = &<../../../Structures/Vanilla/Structure_1x1_2Quarter\structure_1x1_2Quarter.rules>/Part/Components/Graphics/Floor/DamageLevels/0
 		}
 
 		DestroyedEffects
