@@ -24,6 +24,7 @@ Part : <../base_part_terran_structure.rules>/Part
 	//FlipHRotate = [2, 1, 0, 3]
 	//FlipVRotate = [0, 3, 2, 1]
 	GenerateRectCollider = false
+	TempConstructionPartPerTile = cosmoteer.structure
 	EditorIcon
 	{
 		Texture

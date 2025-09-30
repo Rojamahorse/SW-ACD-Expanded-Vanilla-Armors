@@ -3,6 +3,7 @@ Part : <../base_part_terran_structure.rules>/Part
 	NameKey = "Parts/EXPVStructure1x2Round"
 	IconNameKey = "Parts/EXPVStructure1x2RoundIcon"
 	ID = SW.expanded_v_structure_1x2_Round
+	OtherIDs = ["SW.structure1x2_Round","structure1x2_Round"]
 	EditorGroup = "Structure"
 
 	Resources
@@ -24,6 +25,7 @@ Part : <../base_part_terran_structure.rules>/Part
 	//FlipHRotate = [2, 1, 0, 3]
 	//FlipVRotate = [0, 3, 2, 1]
 	GenerateRectCollider = false
+	TempConstructionPartPerTile = cosmoteer.structure
 	EditorIcon
 	{
 		Texture

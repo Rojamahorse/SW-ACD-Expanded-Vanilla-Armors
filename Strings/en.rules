@@ -264,7 +264,7 @@ EXPVArmorwedgeIcon              = "Armor Wdg"
 
 
 
-ExpVStructureDesc = "The underlying structural frame that holds a ship together. Structure is automatically included with all rooms and corridors. \n\n<magenta>Customizable exterior</magenta><string id='CommonStringModIDEXPVA'/>"
+ExpVStructureDesc = "The underlying structural frame that holds a ship together. Structure is automatically included with all rooms and corridors. \n\n<string id='CommonStringModIDEXPVA'/>"
 
 // SW.expanded_v_structure
 EXPVStructure                       = "Structure Square"

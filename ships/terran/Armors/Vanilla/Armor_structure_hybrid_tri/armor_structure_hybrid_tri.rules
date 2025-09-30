@@ -25,7 +25,7 @@ Part : &<../base_part_terran.rules>/Part
 	//Flammable = false
 	//UnderlyingPartPerTile = ""
 	//UnderlyingPart = ""
-	//CreatePartPerTileWhenGrabbed = ""
+	CreatePartPerTileWhenGrabbed = ""
 	//InitialPenetrationResistance = 3
 	//ContinuingPenetrationResistance = &InitialPenetrationResistance
 	//CrewSpeedFactor = 0

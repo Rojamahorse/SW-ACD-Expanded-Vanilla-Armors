@@ -3,6 +3,7 @@ Part : <../base_part_terran_structure.rules>/Part
 	NameKey = "Parts/EXPVStructure1x1TriangleBig"
 	IconNameKey = "Parts/EXPVStructure1x1TriangleBigIcon"
 	ID = SW.expanded_v_structure_1x1_TriangleBig
+	OtherIDs = ["SW.structure1x1_TriangleBig","structure1x1_TriangleBig"]
 	EditorGroup = "Structure"
 
 	Resources
